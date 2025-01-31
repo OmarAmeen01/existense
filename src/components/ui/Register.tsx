@@ -78,7 +78,7 @@ function Register() {
                   Register
                 </h2>
                 <p className="font-sans text-sm py-6 text-center text-gray-500 px-20">
-                  Join Misty's waitlist now for early access to the future of
+                  Join Misty&aposs waitlist now for early access to the future of
                   learning!
                 </p>
               </div>
