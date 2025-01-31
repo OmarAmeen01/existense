@@ -1,12 +1,12 @@
  "use client"
 import Link from 'next/link'
-import React, { MouseEventHandler,useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Button from './ui/Button'
 import Register from './ui/Register'
 import useStore from '@/store/store'
 function Navbar({navLinks}:{navLinks:string[]}) {
-   const setFormState =useStore(state=>state.setFromState) as MouseEventHandler<HTMLButtonElement>
+   const setFormState =useStore(state=>state.setFromState)
 
 const [isMenuVisible,setMenuVisibility] =useState(false)
 

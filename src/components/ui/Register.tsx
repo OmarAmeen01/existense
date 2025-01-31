@@ -1,5 +1,5 @@
 "use client";
-import React, { MouseEventHandler } from "react";
+import React from "react";
 import useStore from "@/store/store";
 import { useState } from "react";
 import InputComponet from "./InputComponent";
@@ -12,7 +12,7 @@ function Register() {
   const isFormClicked = useStore((state) => state.isFormClicked);
   const setFromState = useStore(
     (state) => state.setFromState
-  ) as MouseEventHandler<HTMLButtonElement | HTMLDivElement>;
+  ) 
   const [sendingResponse, setSendingResponse] = useState(false);
   const [error, setError] = useState({
     isError: false,
