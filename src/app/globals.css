@@ -94,7 +94,6 @@ body {
   animation-delay: calc(13s / 4 * (4 - 5) * -1);
 }
 
-
 /* global styles */
 
 input[type="number"]::-webkit-outer-spin-button,

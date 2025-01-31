@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
-import Register from '@/components/ui/Register'
+
 function Home() {
 
 

@@ -6,6 +6,7 @@ import InputComponet from "./InputComponent";
 import Button from "./Button";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
+
 function Register() {
   // States
   const isFormClicked = useStore((state) => state.isFormClicked);
@@ -23,6 +24,15 @@ function Register() {
   // Functions
   function registerUser() {
     setFromState();
+    setSendingResponse(true)
+    setError(prev=>{
+    return {
+      ...prev,
+      isError:false,
+      error:""
+    }
+    
+    })
   }
 
   const formFields = [

@@ -9,6 +9,8 @@ function Navbar({navLinks}:{navLinks:string[]}) {
    const setFormState =useStore(state=>state.setFromState) as MouseEventHandler<HTMLButtonElement>
 
 const [isMenuVisible,setMenuVisibility] =useState(false)
+
+const layerStyle="w-8 h-1 transition-all ease-in-out duration-200  bg-black"
   return (<>
 
     <header className="sticky  p-[14px] top-0 left-0 bg-[rgba(248,248,248,0.90)] backdrop-blur-md  z-10 ">
@@ -20,11 +22,11 @@ const [isMenuVisible,setMenuVisibility] =useState(false)
             <p className='p-1 font-sans  font-[600] '>Existense</p>
             </div>
 
-   <div id='hamburger' className=' flex-col gap-1 p-2 hidden max-[674px]:flex' onClick={()=>setMenuVisibility(prev=>!prev)}>
+   <div id='hamburger' className={`flex-col gap-1 trasnition-all ease-in-out duration-300 delay-300 p-2 hidden max-[674px]:flex ${isMenuVisible?"rotate-[360deg]":""}`} onClick={()=>setMenuVisibility(prev=>!prev)}>
    
-    <div className="w-8 h-1 bg-black "></div>
-    <div className="w-8 h-1 bg-black "></div>
-    <div className="w-8 h-1 bg-black "></div>
+    <div className={`${layerStyle} ${isMenuVisible?"rotate-[50deg]":""}`}></div>
+    <div className={`${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>
+    <div className={`${layerStyle}  bg-black ${isMenuVisible?"-rotate-[50deg] -translate-y-4":""}`}></div>
 
    </div>
       <div className={`max-[674px]:mobileNav w-[50%] min-[676px]:flex min-[676px]:justify-between transition-all duration-200 ease-in-out ${isMenuVisible?"right-0":"-right-[100%]"}`}> 

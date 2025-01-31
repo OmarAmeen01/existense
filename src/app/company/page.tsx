@@ -48,7 +48,7 @@ export default function page() {
     We are in the early stages of a revolution in AI, and this presents an extraordinary opportunity to redefine how we learn and teach. In education, this transformation promises to enhance both the accessibility and quality of learning, creating a future where personalized and scalable education becomes the norm.
             </p>
             <p className='min-[676px]:text-lg font-sans mt-7'>
-            As AI integrates into the education sector, the traditional one-size-fits-all model will evolve. Intelligent educational platforms like us, designed to think, learn, and respond to students' unique needs, can deliver tailored learning experiences better than conventional methods. Today, the cost of education is heavily influenced by manual teaching efforts, including teacher salaries and administrative overhead, which account for a significant share of global education spending. However, as AI-powered platforms “join the teaching workforce,” they will reduce these costs by offering scalable, high-quality instruction that is accessible to all.
+            As AI integrates into the education sector, the traditional one-size-fits-all model will evolve. Intelligent educational platforms like us, designed to think, learn, and respond to student&aposs unique needs, can deliver tailored learning experiences better than conventional methods. Today, the cost of education is heavily influenced by manual teaching efforts, including teacher salaries and administrative overhead, which account for a significant share of global education spending. However, as AI-powered platforms “join the teaching workforce,” they will reduce these costs by offering scalable, high-quality instruction that is accessible to all.
             </p>
             <p className='min-[676px]:text-lg font-sans mt-7'>
             Over time, these intelligent systems could handle repetitive tasks like grading, curriculum design, and progress tracking, allowing human educators to focus on mentorship and fostering creativity. Eventually, AI-powered platforms could even take on the full spectrum of teaching responsibilities, ensuring every child receives a personalized education that adapts to their learning style and pace.
@@ -67,28 +67,28 @@ export default function page() {
           text-xl
          min-[676px]:text-2xl min-[676px]:font-[600]'>1. Adaptive System Design:</h3>
             <p className='min-[676px]:text-lg font-sans my-5'>
-            We are building a fully integrated AI education platform, capable of understanding, teaching, and responding to students' unique needs. The goal is to develop a system with the intellectual and emotional capabilities of an exceptional human tutor. We measure this through factors like learning adaptability, personalized content delivery, and a student’s rate of progress. Continuous cycles of development and testing allow us to refine these features for maximum impact.
+            We are building a fully integrated AI education platform, capable of understanding, teaching, and responding to student&aposs unique needs. The goal is to develop a system with the intellectual and emotional capabilities of an exceptional human tutor. We measure this through factors like learning adaptability, personalized content delivery, and a student’s rate of progress. Continuous cycles of development and testing allow us to refine these features for maximum impact.
             </p>
          </div>
          <div className='mt-8'>
          <h3 className='font-sans  text-xl
          min-[676px]:text-2xl min-[676px]:font-[600]'>2. Accesibility and Affordability:</h3>
             <p className='min-[676px]:text-lg font-sans my-5'>
-           To make this accessible to all learners, we are working to reduce operational costs through scalable cloud infrastucture and efficient AI model training. By optimizing resources and leveraging economies of scale, we aim to bring Misty's platform to students gobally at an affordabe price point, ensuring equitable access to high-quality education.
+           To make this accessible to all learners, we are working to reduce operational costs through scalable cloud infrastucture and efficient AI model training. By optimizing resources and leveraging economies of scale, we aim to bring Misty&aposs platform to students gobally at an affordabe price point, ensuring equitable access to high-quality education.
             </p>
          </div>
          <div className='mt-8'>
          <h3 className='font-sans  text-xl
          min-[676px]:text-2xl min-[676px]:font-[600]'>1. Adaptive System Design:</h3>
             <p className='min-[676px]:text-lg font-sans my-5'>
-            We are building a fully integrated AI education platform, capable of understanding, teaching, and responding to students' unique needs. The goal is to develop a system with the intellectual and emotional capabilities of an exceptional human tutor. We measure this through factors like learning adaptability, personalized content delivery, and a student’s rate of progress. Continuous cycles of development and testing allow us to refine these features for maximum impact.
+            We are building a fully integrated AI education platform, capable of understanding, teaching, and responding to student&aposs unique needs. The goal is to develop a system with the intellectual and emotional capabilities of an exceptional human tutor. We measure this through factors like learning adaptability, personalized content delivery, and a student&aposs rate of progress. Continuous cycles of development and testing allow us to refine these features for maximum impact.
             </p>
          </div>
          <div className='mt-8'>
          <h3 className='font-sans  text-xl
          min-[676px]:text-2xl min-[676px]:font-[600]]'>3. Safety and Trustworthiness::</h3>
             <p className='min-[676px]:text-lg font-sans my-5'>
-            In education, trust and safety are paramount. We will adhere to strict data privacy standards and ethical AI guidelines, ensuring that students' information is protected and used responsibly. Our platform will include rigorous content moderation and bias mitigation to create a safe and inclusive learning environment.
+            In education, trust and safety are paramount. We will adhere to strict data privacy standards and ethical AI guidelines, ensuring that student&aposs information is protected and used responsibly. Our platform will include rigorous content moderation and bias mitigation to create a safe and inclusive learning environment.
             </p>
          </div>
          <div className='mt-8'>

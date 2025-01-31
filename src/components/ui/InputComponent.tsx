@@ -6,7 +6,7 @@ type Input ={
     id?:string,
     className?:string
     }
-export default function InputComponet({type,placeholder, className,id}:Input){
+export default function InputComponet({type,placeholder, className}:Input){
 
     return (
         <div className="flex flex-col">

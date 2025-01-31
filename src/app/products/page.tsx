@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-
 import Footer from '@/components/Footer'
 import CallToAction from '@/components/ui/CallToAction'
 export default function page() {
@@ -60,7 +59,7 @@ export default function page() {
     </section>
     <section className='mt-[72px] sm:mt-28'>
          <div className='px-12 md:px-[7rem] lg:px-[18rem] py-2 font-sans min-[676px]:text-2xl'>
-        <p>First-of-its-kind emotionally Intelligent AI tutor that adapts to every student's unique learning style, ensuring no one is left behind. Misty is not just another online tutor providing recorded video lessons or same resources to each one; it’s a truly personalized AI who treats every student according to his or her grasping power and with that it designs modules so the child can learn at his pace. </p>
+        <p>First-of-its-kind emotionally Intelligent AI tutor that adapts to every student&aposs unique learning style, ensuring no one is left behind. Misty is not just another online tutor providing recorded video lessons or same resources to each one; it’s a truly personalized AI who treats every student according to his or her grasping power and with that it designs modules so the child can learn at his pace. </p>
         <p className=' mt-4 py-8 '>We are creating a human like AI which mimics one-to-one human interaction by acting and speaking just like a human teacher. You can learn anything, anytime, anywhere from the comfort your home at the most affordable price ever, acting like your live companion.</p>
          </div>
     </section>
