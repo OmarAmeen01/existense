@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Button from '@/components/ui/Button'
+
 import Footer from '@/components/Footer'
 import CallToAction from '@/components/ui/CallToAction'
 export default function page() {
