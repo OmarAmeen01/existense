@@ -16,15 +16,15 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
     
     const layerStyle="w-8 h-1 transition-all ease-in-out duration-200  bg-black"
       return (<>
-         <Register/>
+      <Register/>
         <header className={`sticky   p-[14px] top-0 left-0 bg-[rgba(248,248,248,0.90)] backdrop-blur-md overflow-x-hidden  z-10  ${isMenuVisible?"max-[676px]:h-[100vh]":""}`} ref={ref}>
             <nav className='flex justify-between lg:mx-32 '>
-                <div id="logo" className='flex'>
+                <Link href="/" className='flex'>
                <div className='flex relative overflow-hidden w-8'>
                <Image src="/1.png" alt='Existense' width={150} height={150} className=' absolute -top-4 left-1 object-cover  h-[4.5rem] w-28'/>
                </div>
                 <p className='p-1 font-sans  font-[600] '>Existense</p>
-                </div>
+                </Link>
     
        <div id='hamburger' className="flex-col gap-1 trasnition-all ease-in-out duration-300 delay-300 p-2 hidden max-[674px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
        
