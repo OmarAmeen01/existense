@@ -13,7 +13,7 @@ const [isMenuVisible,setMenuVisibility] =useState(false)
 const layerStyle="w-8 h-1 transition-all ease-in-out duration-200  bg-black"
   return (<>
 
-    <header className="sticky  p-[14px] top-0 left-0 bg-[rgba(248,248,248,0.90)] backdrop-blur-md  z-10 ">
+    <header className="sticky  p-[14px] top-0 left-0 bg-[rgba(248,248,248,0.90)] backdrop-blur-md  z-10 overflow-hidden ">
         <nav className='flex justify-between lg:mx-32'>
             <div id="logo" className='flex'>
            <div className='flex relative overflow-hidden w-8'>
