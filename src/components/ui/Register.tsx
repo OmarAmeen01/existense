@@ -46,17 +46,17 @@ function Register() {
     isFormClicked && (
       < div className="fixed grid place-items-center overflow-hidden  z-[15] ">
        
-          <div
-            className="fixed z-[15] bg-[rgb(255,255,255,0.6)]  backdrop-blur-lg  top-0 left-0  w-[100%] h-[100%] "
-      
-          >    </div>
         
-         <div className="fixed top-0 left-0  w-[100%] h-[100%] z-[16] max-[676px]:my-5 ">
-
+        
+         <div className="fixed top-0 left-0 px-6  w-[100%] h-[100%] z-[15] max-[676px]:my-5 ">
+         <div
+            className="fixed z-[14] bg-[rgb(255,255,255,0.6)]  backdrop-blur-lg  top-0 left-0  w-[100%] h-[100%] "
+          onClick={()=>setFromState()}
+          >    </div>
       
             <form
-              className="bg-white px-6 min-[676px]:mt-3 py-2 rounded-lg z-30 w-full  absolute
-              top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg max-[676px]:max-w-[420px] max-w-[420px]     overflow-hidden mx-4 "
+              className="bg-white  z-[15]  min-[676px]:mt-3 p-2 rounded-lg  w-full  absolute
+              top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg min-[676px]:max-w-[385px] max-w-[420px]     overflow-hidden mx-2 max-[350px]:max-w-[290px] "
               onSubmit={handleSubmit(registerUser)}
             >
               {sendingResponse && (
@@ -144,7 +144,7 @@ function Register() {
               />
             </form>
             </div>
-        
+           
       </div>
     )
   );
