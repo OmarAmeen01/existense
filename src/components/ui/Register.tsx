@@ -44,27 +44,28 @@ function Register() {
 
   return (
     isFormClicked && (
-      < div className="fixed grid place-items-center overflow-hidden">
+      < div className="fixed grid place-items-center overflow-hidden  z-[15] ">
        
           <div
-            className="fixed   bg-[rgb(255,255,255,0.6)]  backdrop-blur-lg  top-0 left-0 z-10 w-[100%] h-[100%]"
-            onClick={() => setFromState()}
-          >
-            {" "}
-          </div>
-         
+            className="fixed z-[15] bg-[rgb(255,255,255,0.6)]  backdrop-blur-lg  top-0 left-0  w-[100%] h-[100%] "
+      
+          >    </div>
+        
+         <div className="fixed top-0 left-0  w-[100%] h-[100%] z-[16] max-[676px]:my-5 ">
+
+      
             <form
-              className="bg-white  z-30 px-6  py-2 rounded-lg 
-              top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg max-[676px]:max-w-[420px] max-w-[520px]  relative   overflow-hidden  "
+              className="bg-white px-6 min-[676px]:mt-3 py-2 rounded-lg z-30 w-full  absolute
+              top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg max-[676px]:max-w-[420px] max-w-[420px]     overflow-hidden mx-4 "
               onSubmit={handleSubmit(registerUser)}
             >
               {sendingResponse && (
                 <div id="form-loading" className="absolute top-0"></div>
               )}
-              <div className="relative">
+              <div className="relative mb-6">
                 <button
                   className="bg-transparent p-2 absolute right-0 hover:bg-"
-                  onClick={() => setFromState()}
+                  onClick={()=>{setFromState()}}
                 >
                   <Image
                     src="/cross.svg"
@@ -72,13 +73,14 @@ function Register() {
                     title="close"
                     width={28}
                     height={28}
+                   
                   />
                 </button>
-                <h2 className="font-sans text-3xl p-2 text-center font-[600]">
+                <h2 className="font-sans text-3xl p-2 text-center font-[600] mb-4">
                   Register
                 </h2>
-                <p className="font-sans text-sm py-6 text-center text-gray-500 px-20">
-                  Join Misty&aposs waitlist now for early access to the future of
+                <p className="font-sans text-sm min-[676px]:py-6 text-center text-gray-500  min-[676px]:px-20">
+                  Join Misty&apos;s waitlist now for early access to the future of
                   learning!
                 </p>
               </div>
@@ -87,8 +89,9 @@ function Register() {
                   {error.error}
                 </p>
               )}
-              <div className="flex mb-3 justify-between">
+              <div className="flex min-[676px]:mb-3 my-2  w-full justify-between">
                 <InputComponet
+                className="w-full"
                   type="text"
                   placeholder="First Name"
                   {...register("First Name", {
@@ -97,6 +100,7 @@ function Register() {
                 />
                 <InputComponet
                   type="text"
+                  className=" w-full"
                   placeholder="Last Name"
                   {...register("Last Name", {
                     required: true,
@@ -108,7 +112,7 @@ function Register() {
                   <InputComponet
                     key={formfield.fieldName}
                     type={formfield.type}
-                    className="mb-3"
+                    className="mb-2"
                     placeholder={`${formfield.fieldName}*`}
                     {...register(formfield.fieldName, {
                       required: true,
@@ -139,7 +143,8 @@ function Register() {
                 type="submit"
               />
             </form>
-
+            </div>
+        
       </div>
     )
   );
