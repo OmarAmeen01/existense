@@ -21,7 +21,7 @@
 
 @layer components {
   .mobileNav{
-  @apply  bg-[rgba(248,248,248,0.90)] backdrop-blur-md absolute  w-full h-[100vh]  z-50  top-[4rem] p-10 
+  @apply  bg-[rgba(248,248,248,0.90)] backdrop-blur-md absolute w-full h-[100vh]  z-50  top-[4rem] p-10 
   }
 }
 
