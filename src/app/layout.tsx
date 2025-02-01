@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} font-sans bg-[#F8F8F8]`}
+        className={`${openSans.variable} overflow-x-hidden font-sans bg-[#F8F8F8]`}
       >
         <Navbar navLinks={navLinks}/>
         {children}

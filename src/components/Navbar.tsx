@@ -22,7 +22,7 @@ const layerStyle="w-8 h-1 transition-all ease-in-out duration-200  bg-black"
             <p className='p-1 font-sans  font-[600] '>Existense</p>
             </div>
 
-   <div id='hamburger' className={`flex-col gap-1 trasnition-all ease-in-out duration-300 delay-300 p-2 hidden max-[674px]:flex ${isMenuVisible?"rotate-[360deg]":""}`} onClick={()=>setMenuVisibility(prev=>!prev)}>
+   <div id='hamburger' className="flex-col gap-1 trasnition-all ease-in-out duration-300 delay-300 p-2 hidden max-[674px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
    
     <div className={`${layerStyle} ${isMenuVisible?"rotate-[50deg]":""}`}></div>
     <div className={`${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>

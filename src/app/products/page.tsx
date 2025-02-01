@@ -70,13 +70,13 @@ export default function page() {
 <section className=' mt-[72px] lg:mt-28'>
 {features.map(feature=>{
     return (
-        <div className={`justify-around flex flex-col px-8 lg:px-28 gap-5 mb-28 ${feature.style} `} key={feature.title}> 
+        <div className={`justify-around flex flex-col px-4 lg:px-28 gap-5 mb-28 ${feature.style} `} key={feature.title}> 
    <div className='self-center lg:w-[30rem] ' >
     <h3 className='font-sans sm:text-3xl mb-7 p-2 font-[600]'>{feature.title}</h3>
     <p className='font-sans  sm:text-lg p-2  '>{feature.description}</p>
   </div>
 <div>
-<Image className="w-full min-w-[342px]  mt-14 rounded-lg shadow-lg  h-[399px] sm:h-[576px] max-w-full" src={feature.image} alt={feature.title} width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
+<Image className="w-full   mt-14 rounded-lg shadow-lg  h-[399px] min-[676px]:h-[576px] max-w-full" src={feature.image} alt={feature.title} width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )

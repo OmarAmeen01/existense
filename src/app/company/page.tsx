@@ -9,22 +9,22 @@ export default function page() {
     <header className='mt-28'>
 
 <h1  className='font-sans font-[600] text-3xl min-[676px]:text-5xl   text-center tracking-tighter p-2'>About Us</h1>
-<p className='text-center font-sans p-2 min-[676px]:text-lg mt-6 md:w-[32rem] m-auto'>An initiative with very advanced and initiative technology, aiming in providing meaningful AI solutions</p>
+<p className='text-center font-sans p-2 px-4 min-[676px]:text-lg mt-6 md:w-[32rem] m-auto'>An initiative with very advanced and initiative technology, aiming in providing meaningful AI solutions</p>
 </header>
 
 <section className='mt-28'>
-        <Image className='object-cover  m-w-[100%] h-52 min-[676px]:h-[550px] mx-auto rounded-lg shadow-2xl' src="/img6.jpg" alt='product' width={1100} height={669}/>
+        <Image className='object-cover  m-w-[100%] h-52 min-[676px]:h-[550px] px-4 mx-auto rounded-lg shadow-2xl' src="/img6.jpg" alt='product' width={1100} height={669}/>
 </section>
-<section className='mt-28'>
-        <div className={`flex flex-col min-[676px]:flex-row justify-around lg:px-28 p-10 `}>
-       <div className='self-center  w-[30rem] ' >
-        <h3 className='font-sans text-2xl  min-[676px]:text-3xl p-2 font-[600]'>Our vision for the future of education.</h3>
+<section className='mt-28 flex flex-col min-[676px]:flex-row min-[676px]:justify-around  lg:px-28 p-2 '>
+       
+       <div className='  min-[676px]:flex min-[676px]:flex-col min-[676px]:justify-center min-[676px]:items-center p-4' >
+        <h3 className='font-sans text-xl min-[676px]:text-3xl  font-[600]'>Our vision for the future of education.</h3>
         <p className='font-sans min-[676px]:text-lg p-2  '>To revolutionize personalized learning through AI by creating an emotionally intelligent AI tutor that can transform how we learn.</p>
       </div>
     <div>
-    <Image className="w-full min-w-[342px]  rounded-lg shadow-lg h-[399px] min-[676px]:h-[576px] max-w-full" src='/img7.jpg' alt="vision" width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
+    <Image className="w-full min-[676px]:min-w-[399px] rounded-lg shadow-lg h-[399px] p-4  max-[676px]:mt-12  min-[676px]:h-[576px] max-w-full" src='/img7.jpg' alt="vision" width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
     </div>
-       </div>
+    
 </section>
 
 <section className="mt-[72px] min-[676px]:mt-28  px-10 md:px-40 lg:px-96">
