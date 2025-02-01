@@ -15,9 +15,9 @@ export default function page() {
 <section className='mt-28 mx-4'>
         <Image className='object-cover w-full h-52 min-[676px]:h-[550px] rounded-lg shadow-2xl' src="/img6.jpg" alt='product' width={1100} height={669}/>
 </section>
-<section className='mt-28 flex flex-col min-[676px]:flex-row min-[676px]:justify-around  lg:px-28  '>
+<section className='mt-28 flex flex-col min-[676px]:flex-row min-[676px]:justify-around  lg:px-28 mx-4 '>
        
-       <div className='  min-[676px]:flex min-[676px]:flex-col min-[676px]:justify-center min-[676px]:items-center p-4' >
+       <div className='  min-[676px]:flex min-[676px]:flex-col min-[676px]:justify-center min-[676px]:items-center ' >
         <h3 className='font-sans text-xl min-[676px]:text-3xl  font-[600]'>Our vision for the future of education.</h3>
         <p className='font-sans min-[676px]:text-lg p-2  '>To revolutionize personalized learning through AI by creating an emotionally intelligent AI tutor that can transform how we learn.</p>
       </div>
