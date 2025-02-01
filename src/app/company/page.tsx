@@ -12,8 +12,8 @@ export default function page() {
 <p className='text-center font-sans p-2 px-4 min-[676px]:text-lg mt-6 md:w-[32rem] m-auto'>An initiative with very advanced and initiative technology, aiming in providing meaningful AI solutions</p>
 </header>
 
-<section className='mt-28'>
-        <Image className='object-cover  m-w-[100%] h-52 min-[676px]:h-[550px] px-4 mx-auto rounded-lg shadow-2xl' src="/img6.jpg" alt='product' width={1100} height={669}/>
+<section className='mt-28 mx-4'>
+        <Image className='object-cover w-full h-52 min-[676px]:h-[550px] rounded-lg shadow-2xl' src="/img6.jpg" alt='product' width={1100} height={669}/>
 </section>
 <section className='mt-28 flex flex-col min-[676px]:flex-row min-[676px]:justify-around  lg:px-28 p-2 '>
        

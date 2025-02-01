@@ -56,7 +56,9 @@ function Register() {
       
             <form
               className="bg-white  z-[15]  min-[676px]:mt-3 p-2 rounded-lg  w-full  absolute
-              top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg min-[385px]:max-w-[385px] max-w-[420px]     overflow-hidden min-[676px]:mx-2 max-[350px]:max-w-[280px] "
+              top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg min-[385px]:max-w-[385px]  overflow-hidden min-[676px]:mx-2 
+        
+              max-[350px]:max-w-[260px] "
               onSubmit={handleSubmit(registerUser)}
             >
               {sendingResponse && (
