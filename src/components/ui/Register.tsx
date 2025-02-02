@@ -36,10 +36,9 @@ async function onSubmit(formData:FormInput) {
     const {data} = await supabase.from("Users").select("*")
     
     if(data!==null){
-     
+      
      const existingUser = data.filter(user=>{
-          
-     return ( formData.email === user.email || formData.phone_number===user.phone_number)
+     return ( formData.email === user.email || Number(formData.phone_number)===user.phone_number)
         
      })
 
@@ -56,7 +55,7 @@ async function onSubmit(formData:FormInput) {
       .from('Users')
       .insert([{ first_name:formData.first_name,
         last_name:formData.last_name,
-        email:formData.email,
+        email:formData.email.toLowerCase(),
         phone_number:formData.phone_number,
         school_name:formData.school_name,
         grade:formData.grade,
@@ -179,9 +178,10 @@ async function onSubmit(formData:FormInput) {
 
 
               <InputComponet
-                  type="text"
+                  type="email"
                   error={errors.email}
                   className="mb-5"
+                  pattern= {/^\S+@\S+\.\S+$/}
                   placeholder="Email*"
                   register={register}
                   required="Email is required"
@@ -194,10 +194,13 @@ async function onSubmit(formData:FormInput) {
 
 
                 <InputComponet
-                type="text"
+                type="number"
                 error={errors.phone_number}
                 className="mb-5"
                 placeholder="Phone Number*"
+                pattern={/^\+?[1-9][0-9]{9,14}$/}
+                minLength={10}
+                maxLength={14}
                 register={register}
                 required="Phone Number is required"
                 fieldName="phone_number"
