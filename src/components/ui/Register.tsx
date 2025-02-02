@@ -1,45 +1,111 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import useStore from "@/store/store";
-import { useState } from "react";
 import InputComponet from "./InputComponent";
 import Button from "./Button";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
-
+import { supabase } from "@/db/db";
 function Register() {
   // States
   const isFormClicked = useStore((state) => state.isFormClicked);
   const setFromState = useStore(
     (state) => state.setFromState
   ) 
-  const [sendingResponse, setSendingResponse] = useState(false);
-  const [error, setError] = useState({
-    isError: false,
-    error: "",
-  });
+  const  [error,setError] = useState({
+    isError:false,
+    msg:""
+  })
 
-  const { handleSubmit, register } = useForm();
 
+
+  interface FormInput{
+    first_name:string,
+    last_name:string,
+    school_name:string,
+    grade:string,
+    email:string,
+    phone_number:number,
+  }
+
+  const { handleSubmit,register ,formState:{errors,isSubmitting,isSubmitSuccessful },reset} = useForm<FormInput>();
+console.log(errors)
   // Functions
-  function registerUser() {
-    setFromState();
-    setSendingResponse(true)
-    setError(prev=>{
-    return {
+async function onSubmit(formData:FormInput) {
+  try {
+    const {data} = await supabase.from("Users").select("*")
+    
+    if(data!==null){
+     
+     const existingUser = data.filter(user=>{
+          
+     return ( formData.email === user.email || formData.phone_number===user.phone_number)
+        
+     })
+
+    if (existingUser.length===0){
+      setError(prev=>(
+        {...prev,
+          isError:true,
+          msg:"Email or Phone Number already exist"
+        }
+      
+      ))
+    }else{
+      const { error } = await supabase
+      .from('Users')
+      .insert([{ first_name:formData.first_name,
+        last_name:formData.last_name,
+        email:formData.email,
+        phone_number:formData.phone_number,
+        school_name:formData.school_name,
+        grade:formData.grade,
+     }])
+   
+    if (error){
+      setError(prev=>(
+        {
+          ...prev,
+          isError:true,
+          msg:error.message
+        }
+      ))
+    }
+  
+  if(isSubmitSuccessful){
+    setError(prev=>({
       ...prev,
       isError:false,
-      error:""
+      msg:""
+    }))
+    setFromState()
+    reset()
+  }
     }
-    
-    })
+
+    }
+  
+
+
+ 
+  } catch (error) {
+     
+    setError(prev=>(
+      {
+        ...prev,
+        isError:true,
+        msg:JSON.stringify(error)
+      }
+    ))
+
+  }
   }
 
   const formFields = [
-    { type: "text", fieldName: "Email" },
-    { type: "number", fieldName: "Phone Number" },
-    { type: "text", fieldName: "School Name" },
-    { type: "text", fieldName: "Grade" },
+    { type: "text", fieldName: "email" , name:"Email*" },
+    { type: "number", fieldName: "phone_number", name:"Phone Number*" },
+    { type: "text", fieldName: "school_name", name:"School Name*" },
+    { type: "text", fieldName: "grade", name:"Grade*" },
   ];
 
   return (
@@ -59,9 +125,9 @@ function Register() {
               top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-lg min-[385px]:max-w-[385px]  overflow-hidden min-[676px]:mx-2 
         
               max-[350px]:max-w-[260px] "
-              onSubmit={handleSubmit(registerUser)}
+              onSubmit={handleSubmit(onSubmit)}
             >
-              {sendingResponse && (
+              {isSubmitting&& (
                 <div id="form-loading" className="absolute top-0"></div>
               )}
               <div className="relative mb-6">
@@ -81,67 +147,116 @@ function Register() {
                 <h2 className="font-sans text-3xl p-2 text-center font-[600] mb-4">
                   Register
                 </h2>
-                <p className="font-sans text-sm min-[676px]:py-6 text-center text-gray-500  min-[676px]:px-20">
+                <p className="font-sans text-sm min-[676px]:py-6 text-center text-gray-500  min-[676px]:px-16">
                   Join Misty&apos;s waitlist now for early access to the future of
                   learning!
                 </p>
+                {error.isError&& <p className="font-sans text-sm  text-center text-red-500">{error.msg}</p>}
               </div>
-              {error.isError && (
-                <p className="text-red-500 text-lg text-center">
-                  {error.error}
-                </p>
-              )}
-              <div className="flex min-[676px]:mb-3 my-2  w-full justify-between">
+              <div className="flex   mb-5 my-2   w-full justify-between">
+                <div className="relative w-full  mr-2">
                 <InputComponet
                 className="w-full"
+                error={errors.first_name}
                   type="text"
-                  placeholder="First Name"
-                  {...register("First Name", {
-                    required: true,
-                  })}
+                  placeholder="First Name*"
+                  register={register}
+                  required="FirstName is required"
+                  fieldName="first_name"
                 />
+              {errors.first_name&&<p className="absolute z-1  -top-[18px] text-[11px] text-red-500 left-1 font-sans ">{errors.first_name.message}</p>}
+                </div>
+                <div className="relative w-full">
                 <InputComponet
                   type="text"
-                  className=" w-full"
-                  placeholder="Last Name"
-                  {...register("Last Name", {
-                    required: true,
-                  })}
+                  error={errors.last_name}
+                  className="w-full"
+                  placeholder="Last Name*"
+                  register={register}
+                  required="Last Name is required"
+                  fieldName="last_name"
                 />
+      {errors.last_name&&<p className="absolute   -top-[18px] text-[11px] text-red-500 left-1 font-sans ">{errors.last_name.message}</p>}
+                </div>
+                
               </div>
-              {formFields.map((formfield) => {
-                return (
-                  <InputComponet
-                    key={formfield.fieldName}
-                    type={formfield.type}
-                    className="mb-2"
-                    placeholder={`${formfield.fieldName}*`}
-                    {...register(formfield.fieldName, {
-                      required: true,
-                    })}
-                  />
-                );
-              })}
+              <div className="relative ">
+
+
+              <InputComponet
+                  type="text"
+                  error={errors.email}
+                  className="mb-5"
+                  placeholder="Email*"
+                  register={register}
+                  required="Email is required"
+                  fieldName="email"
+                />
+               
+      {errors.email&&<p className="absolute font-sans left-1   -top-[18px] text-[11px] text-red-500">{errors.email.message}</p>}
+</div>
+                 <div className="relative">
+
+
+                <InputComponet
+                type="text"
+                error={errors.phone_number}
+                className="mb-5"
+                placeholder="Phone Number*"
+                register={register}
+                required="Phone Number is required"
+                fieldName="phone_number"
+              />
+             
+      {errors.phone_number&&<p className="absolute  -top-[18px] left-1 text-[11px] font-sans text-sm text-red-500">{errors.phone_number.message}</p>}
+</div>
+               <div className="relative">
+
+
+               <InputComponet
+              type="text"
+              error={errors.school_name}
+            className="mb-5"
+              placeholder="School Name*"
+              register={register}
+              required="School Name is required"
+              fieldName="school_name"
+            /> 
+      {errors.school_name&&<p className="absolute  left-1 font-sans   -top-[18px] text-[11px] text-red-500">{errors.school_name.message}</p>}
+</div>
+             <div className="relative">
+
+
+            <InputComponet
+            type="text"
+            error={errors.last_name}
+           className="mb-5"
+            placeholder="Grade*"
+            register={register}
+            required="Grade is required"
+            fieldName="grade"
+          />
+      {errors.grade&&<p className="absolute left-1 -top-[18px] text-[11px] text-red-500 font-sans  ">{errors.grade.message}</p>}
+          </div>
               <p className="font-sans text-sm mt-4 text-gray-500 text-center">
                 By clicking “Submit”, you agree to our{" "}
                 <a
                   href="#"
-                  className="font-sans text-sm font-[600] text-black underline "
+                  className="font-sans text-sm hover:text-[#006dff] font-[600] text-black underline "
                 >
                   Terms of service
                 </a>{" "}
                 and acknowledge of our{" "}
                 <a
                   href="#"
-                  className="font-sans text-sm font-[600] text-black underline "
+                  className="font-sans text-sm font-[600] hover:text-[#006dff] text-black underline "
                 >
                   Privacy policy.
                 </a>
               </p>
-
-              <Button
+               <Button
                 className="relative left-[50%] -translate-x-[50%] text-sm p-[6px] px-6 mt-4 mb-2"
-                text={sendingResponse ? "wait..." : "submit"}
+                text={isSubmitting? "wait..." : "submit"}
                 type="submit"
               />
             </form>

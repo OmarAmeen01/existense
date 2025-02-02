@@ -6,7 +6,7 @@ function Home() {
 
 
   return (
-     <main className='relative overflow-y-hidden '>
+     <main className='relative  '>
 
 <article>
   <section className='sm:px-10 px-3 border-2 '>
@@ -16,7 +16,7 @@ function Home() {
      <div className='relative grid place-items-center'>
       <div id="title" className='mb-3'>
       <h1 className='font-sans text-center text-4xl text-white font-[600]'>
-           EXISTENSE
+           Existense
         </h1>
         <p className='font-sans text-lg font-[300] sm:text-sm text-white text-center mt-1'>Revolutionising The Education System Forever</p>
       </div >

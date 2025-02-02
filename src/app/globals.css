@@ -35,7 +35,24 @@ body {
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
 
+#form-loading{
+  height: 5px;
+  width: 200px;
+  border-radius:15rem;
+  background-color: #44bbdf;
+ animation:formloading 4s ease-in-out 0s infinite ; 
+ }
+
 /* animation */
+@keyframes  formloading {
+  0%{
+transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(100%);
+  }
+}
+
 .wrapper {
   margin-top: 2rem;
   width: 90%;
