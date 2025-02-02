@@ -43,7 +43,7 @@ async function onSubmit(formData:FormInput) {
         
      })
 
-    if (existingUser.length===0){
+    if (existingUser.length>0){
       setError(prev=>(
         {...prev,
           isError:true,
@@ -70,17 +70,19 @@ async function onSubmit(formData:FormInput) {
           msg:error.message
         }
       ))
+    }else{
+      if(isSubmitSuccessful){
+        setError(prev=>({
+          ...prev,
+          isError:false,
+          msg:""
+        }))
+        setFromState()
+        reset()
+      }
     }
   
-  if(isSubmitSuccessful){
-    setError(prev=>({
-      ...prev,
-      isError:false,
-      msg:""
-    }))
-    setFromState()
-    reset()
-  }
+  
     }
 
     }
