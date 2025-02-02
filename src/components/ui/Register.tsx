@@ -101,13 +101,6 @@ async function onSubmit(formData:FormInput) {
   }
   }
 
-  const formFields = [
-    { type: "text", fieldName: "email" , name:"Email*" },
-    { type: "number", fieldName: "phone_number", name:"Phone Number*" },
-    { type: "text", fieldName: "school_name", name:"School Name*" },
-    { type: "text", fieldName: "grade", name:"Grade*" },
-  ];
-
   return (
     isFormClicked && (
       < div className="fixed grid place-items-center overflow-hidden  z-[15] ">
@@ -161,7 +154,7 @@ async function onSubmit(formData:FormInput) {
                   type="text"
                   placeholder="First Name*"
                   register={register}
-                  required="FirstName is required"
+                  required="First Name is required"
                   fieldName="first_name"
                 />
               {errors.first_name&&<p className="absolute z-1  -top-[18px] text-[11px] text-red-500 left-1 font-sans ">{errors.first_name.message}</p>}
