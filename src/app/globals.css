@@ -31,9 +31,7 @@ body {
   background: var(--background);
   font-family: "Open Sans";
 }
-#product-heading{
-  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
-}
+
 
 #form-loading{
   height: 5px;
@@ -54,7 +52,7 @@ transform: translateX(-100%);
 }
 
 .wrapper {
-  margin-top: 2rem;
+  margin-top: 4rem;
   width: 90%;
   max-width: 1700px;
   margin-inline: auto;
@@ -63,53 +61,81 @@ transform: translateX(-100%);
 
  
 }
+
 @keyframes scrollLeft {
   to {
-    left: -500px;
+    left: -490px;
   }
 }
 
 @keyframes scrollRight {
   to {
-    right: -500px;
+    right: -490px;
   }
 }
 
 
+
+
 .itemLeft,
 .itemRight {position: absolute;
-  animation-timing-function: linear;
-  animation-duration: 16s;
+
+  animation-timing-function:linear;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
 }
 .itemLeft {
-  left: max(calc(320px * 4),100% );
+  left: max(calc(1px * 4),100% );
   animation-name: scrollLeft;
 }
 .itemRight {
-  right: max(calc(320px * 4), 100% );
+  right: max(calc(1px * 4), calc(100% + 1px) );
   animation-name: scrollRight;
 }
 
 .item0 {
-  animation-delay: calc(16s / 4 * (4- 1) * -1);
+  animation-delay: calc(14s / 4 * (4- 1) * -1);
 }
 
 .item1 {
-  animation-delay: calc(16s / 4 * (4 - 2) * -1);
+  animation-delay: calc(14s / 4 * (4 - 2) * -1);
 }
 
 .item2 {
-  animation-delay: calc(16s / 4 * (4 - 3) * -1);
+  animation-delay: calc(14s / 4 * (4 - 3) * -1);
 }
 
 .item3 {
-  animation-delay: calc(16s / 4 * (4 - 4) * -1);
+  animation-delay: calc(14s / 4 * (4 - 4) * -1);
 }
 
 .item4{
-  animation-delay: calc(16s / 4 * (4 - 5) * -1);
+  animation-delay: calc(14s / 4 * (4 - 5) * -1);
 }
+
+@media screen and (max-width:931px) {
+  @keyframes scrollLeft {
+    to {
+      left: -100px;
+    }
+  }
+  
+  @keyframes scrollRight {
+    to {
+      right: -850px;
+    }
+  }
+  .itemLeft {
+    left: max(calc(200px * 4),100% );
+    animation-name: scrollLeft;
+  }
+  .itemRight {
+    right: max(calc(200px * 4), calc(100% + 1px) );
+    animation-name: scrollRight;
+  }
+}
+
+
 
 /* global styles */
 

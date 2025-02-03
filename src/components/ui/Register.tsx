@@ -51,7 +51,7 @@ async function onSubmit(formData:FormInput) {
       
       ))
     }else{
-      const { error } = await supabase
+      const {data, error } = await supabase
       .from('Users')
       .insert([{ first_name:formData.first_name,
         last_name:formData.last_name,
@@ -69,8 +69,8 @@ async function onSubmit(formData:FormInput) {
           msg:error.message
         }
       ))
-    }else{
-      if(isSubmitSuccessful){
+    }
+      if(isSubmitSuccessful)
         setError(prev=>({
           ...prev,
           isError:false,
@@ -79,12 +79,12 @@ async function onSubmit(formData:FormInput) {
         setFromState()
         reset()
       }
-    }
+    
   
   
     }
 
-    }
+    
   
 
 
@@ -184,7 +184,6 @@ async function onSubmit(formData:FormInput) {
                   pattern= {/^\S+@\S+\.\S+$/}
                   placeholder="Email*"
                   register={register}
-                  required="Email is required"
                   fieldName="email"
                 />
                
