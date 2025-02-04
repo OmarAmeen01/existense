@@ -21,7 +21,7 @@
 
 @layer components {
   .mobileNav{
-  @apply  bg-[rgba(248,248,248,0.90)] backdrop-blur-md absolute w-full h-[100vh]  z-30  top-[4rem] p-10 
+  @apply  absolute w-full h-[100vh]  z-30  top-[4rem] p-10 
   }
 }
 
@@ -62,18 +62,28 @@ transform: translateX(-100%);
  
 }
 
+
+
 @keyframes scrollLeft {
   to {
-    left: -490px;
+    left: -850px;
   }
 }
 
 @keyframes scrollRight {
   to {
-    right: -490px;
+    right: -850px;
   }
 }
 
+.itemLeft {
+  left: max(calc(200px * 4),100% );
+  animation-name: scrollLeft;
+}
+.itemRight {
+  right: max(calc(200px * 4), 100%  );
+  animation-name: scrollRight;
+}
 
 
 
@@ -84,14 +94,7 @@ transform: translateX(-100%);
   animation-duration: 14s;
   animation-iteration-count: infinite;
 }
-.itemLeft {
-  left: max(calc(1px * 4),100% );
-  animation-name: scrollLeft;
-}
-.itemRight {
-  right: max(calc(1px * 4), calc(100% + 1px) );
-  animation-name: scrollRight;
-}
+
 
 .item0 {
   animation-delay: calc(14s / 4 * (4- 1) * -1);
@@ -113,28 +116,108 @@ transform: translateX(-100%);
   animation-delay: calc(14s / 4 * (4 - 5) * -1);
 }
 
-@media screen and (max-width:931px) {
+
+@media  screen and (min-width:768px) {
+  .wrapper{
+    margin-top:3rem
+  }
+  
+}
+@media screen and (max-width:766px){
+
+  .wrapper{
+    margin-top:2rem
+  }
+}
+@media screen and (min-width:1050px) {
   @keyframes scrollLeft {
     to {
-      left: -100px;
+      left: -550px;
     }
   }
   
   @keyframes scrollRight {
     to {
-      right: -850px;
+      right: -550px;
     }
   }
+ 
   .itemLeft {
-    left: max(calc(200px * 4),100% );
+    left: max(calc(140px * 4),calc(100% + 140px) );
     animation-name: scrollLeft;
   }
   .itemRight {
-    right: max(calc(200px * 4), calc(100% + 1px) );
+    right: max(calc(140px * 4), calc(100% + 140px) );
     animation-name: scrollRight;
   }
 }
 
+@media screen and (min-width:1180px) {
+  @keyframes scrollLeft {
+    to {
+      left: -500px;
+    }
+  }
+  
+  @keyframes scrollRight {
+    to {
+      right: -500px;
+    }
+  }
+  .itemLeft {
+    left: max(calc(70px * 4),calc(100% + 70px) );
+    animation-name: scrollLeft;
+  }
+  .itemRight {
+    right:max(calc(70px * 4),calc(100% + 70px) );
+    animation-name: scrollRight;
+  }
+}
+
+@media screen and (min-width:1350px) {
+  @keyframes scrollLeft {
+    to {
+      left: -500px;
+    }
+  }
+  
+  @keyframes scrollRight {
+    to {
+      right: -500px;
+    }
+  }
+  .itemLeft {
+    left: max(calc(150px * 4),calc(100% + 150px) );
+    animation-name: scrollLeft;
+  }
+  .itemRight {
+    right:max(calc(150px * 4),calc(100% + 150px) );
+    animation-name: scrollRight;
+  }
+}
+
+
+@media screen and (min-width:1500px) {
+  @keyframes scrollLeft {
+    to {
+      left: -540px;
+    }
+  }
+  
+  @keyframes scrollRight {
+    to {
+      right: -540px;
+    }
+  }
+  .itemLeft {
+    left: max(calc(1px * 4),calc(90% + 1px) );
+    animation-name: scrollLeft;
+  }
+  .itemRight {
+    right:max(calc(1px * 4),calc(90% + 1px) );
+    animation-name: scrollRight;
+  }
+}
 
 
 /* global styles */

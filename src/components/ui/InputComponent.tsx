@@ -26,7 +26,8 @@ export  default function  InputComponet({type,placeholder,fieldName,minLength, m
 
         return (
                     <input
-                    className={`rounded-lg text-sm w-full  font-sans focus:outline-[#006dff] p-2 outline-2  bg-[#dadada] ${error&&"focus:outline-red-500 bg-red-100"}  ${className}`} 
+                    className={`rounded-lg
+                        text-sm sm:text-xl w-full  font-sans focus:outline-[#006dff] p-2  sm:p-3 outline-2  bg-[#dadada] ${error&&"focus:outline-red-500 bg-red-100"}  ${className}`} 
                     {...register(fieldName,{required, pattern:pattern})}
                     type={type || "text"} placeholder={placeholder} minLength={minLength} maxLength={maxLength} />
 

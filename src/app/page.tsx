@@ -15,7 +15,7 @@ function Home() {
      <div  className='absolute top-[57%] left-[50%]  transform -translate-x-[50%] -translate-y-[50%] ml-auto mr-auto'>
      <div className='relative grid gap-5 place-items-center'>
       <div id="title" className='max-[676px]:w-80'>
-      <h1 className='font-sans text-center text-4xl lg:text-6xl py-2 lg:mb-2 text-white font-[600]'>
+      <h1 className='font-sans text-center text-5xl lg:text-6xl py-2 mb-2 text-white font-[600]'>
            Existense
         </h1>
         <p className='font-sans text-xl font-[300] md:text-2xl text-white text-center '>Revolutionising The Education System Forever</p>
