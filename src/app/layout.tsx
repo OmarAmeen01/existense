@@ -3,7 +3,7 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 const openSans =Open_Sans({
-  subsets:["cyrillic"],
+  subsets:["cyrillic-ext"],
    weight:["300", "400", "500", "600","700","800"],
    style:["normal"],
    variable:"--open-sans"

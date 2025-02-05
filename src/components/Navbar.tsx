@@ -21,7 +21,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
             <nav className='flex justify-between   lg:mx-20 min-[1350px]:mx-44 '>
                 <Link href="/" className='flex'>
                <div className='flex relative overflow-hidden w-12'>
-               <Image src="/1.png" alt='Existense' width={150} height={150} className=' absolute -top-8 left-1 object-cover  h-[7rem] w-40'/>
+               <Image src="/1.png" alt='Existense' width={200} height={200} className=' absolute -top-10 left-1 object-cover  h-[8.7rem] w-40'/>
                </div>
                 <p className='p-1 font-sans text-[33px] font-[600]  '>Existense</p>
                 </Link>
