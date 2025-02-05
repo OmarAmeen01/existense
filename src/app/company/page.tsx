@@ -32,8 +32,8 @@ const detailSec = {
 <p className='text-center  min-[480px]:w-[24rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[32rem] m-auto' >An initiative with very advanced and initiative technology, aiming in providing meaningful AI solutions</p>
 </header>
 
-<section className='mt-12  min-[1350px]:px-40  '>
-        <Image className='object-cover w-full h-80  md:h-[645px]  max-[370px]:h-36 max-[460px]:h-52 rounded-lg ' src="/img8.webp" alt='product' width={100000} height={669}/>
+<section className='mt-12 md:px-10 lg:px-10 min-[1600px]:px-28  '>
+        <Image className='object-cover w-full h-96 2xl:h-[640px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/img8.webp" alt='product' width={100000} height={669}/>
 </section>
 <section className='justify-between flex flex-col-reverse  min-[700px]:flex-row rounded-lg bg-white min[400px]:px-10 my-20 min-[700px]:mx-10'>
        
