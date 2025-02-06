@@ -52,7 +52,7 @@ const detailSec = {
     
 </section>
 
-<section className="mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-44 xl:px-[350px] min-[1600px]:px-[480px]">
+<section className="mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-56 xl:px-[350px] 2xl:px-[390px] min-[1600px]:px-[480px]">
     <div >
         <h2 className={detailSec.heading}>The Company</h2>
         <p  className={detailSec.para}>

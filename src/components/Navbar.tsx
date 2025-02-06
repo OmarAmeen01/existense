@@ -14,7 +14,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
 
     const [isMenuVisible,setMenuVisibility] =useState(false)
     
-    const layerStyle="w-7 h-[2px] transition-all ease-in-out duration-200  bg-black"
+    const layerStyle="w-5 h-[2px] transition-all ease-in-out duration-200  bg-black"
       return (<>
       <Register/>
     

@@ -65,7 +65,7 @@ export default function page() {
     <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
         <Image  className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/Image.jpg" alt='product' width={100000} height={669}/>
     </section>
-    <section className="mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-44 xl:px-[350px]">
+    <section className="mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-44 lg:px-64 xl:px-72 2xl:px-96 min-[1660px]:px-[430px]">
          <div className='font-sans  py-8 max-md:py-4 text-lg    
          
         '>
