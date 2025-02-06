@@ -10,7 +10,7 @@ function Home() {
 
 <article>
   <section className='sm:px-7 px-3  '>
-  <video src="/videos/Main.mp4"   loop preload="metadata" height={40}  muted className='w-full border-2 rounded-lg ml-auto mr-auto h-[90vh] object-cover'></video>
+  <video src="/videos/Main.mp4" autoPlay   loop preload="metadata" height={40}  muted className='w-full border-2 rounded-lg ml-auto mr-auto h-[90vh] object-cover'></video>
   
      <div  className='absolute top-[50%] left-[50%]  transform -translate-x-[50%] -translate-y-[50%] ml-auto mr-auto'>
      <div className='relative grid gap-5 place-items-center'>
