@@ -102,7 +102,7 @@ export default function page() {
         <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  '>Real Reviews</h2>
         <p className='text-center  min-[480px]:w-[28rem] font-sans  py-3 max-[400px]:px-4 text-xl sm:w-[38rem] m-auto'>Tested by 1000+ students.</p>
     </header>
-   <section className='  h-[28rem] md:h-[38rem] overflow-hidden mt-10  mx-4 min-[1250px]:w-[1080px] min-[1400px]:w-[1224px] mr-auto ml-auto'>
+   <section className='  overflow-hidden mt-10  mx-4 min-[1250px]:w-[1080px] min-[1400px]:w-[1224px] mr-auto ml-auto mb-28'>
   <div className="flex  wrapper">{reviews[0].map((review,index)=>{
     return (
         <div className={` itemLeft  h-[77px]  w-[340px]  bg-[#F8F8F8]  rounded-lg item${index}`} key={review.slice(0,4)}>
