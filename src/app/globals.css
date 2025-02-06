@@ -91,25 +91,25 @@ transform: translateX(-100%);
 .itemRight {position: absolute;
 
   animation-timing-function:linear;
-  animation-duration: 14s;
+  animation-duration: 24s;
   animation-iteration-count: infinite;
 }
 
 
 .item0 {
-  animation-delay: calc(14s / 4 * (4- 1) * -1);
+  animation-delay: calc(24s / 4 * (4- 1) * -1);
 }
 
 .item1 {
-  animation-delay: calc(14s / 4 * (4 - 2) * -1);
+  animation-delay: calc(24s / 4 * (4 - 2) * -1);
 }
 
 .item2 {
-  animation-delay: calc(14s / 4 * (4 - 3) * -1);
+  animation-delay: calc(24s / 4 * (4 - 3) * -1);
 }
 
 .item3 {
-  animation-delay: calc(14s / 4 * (4 - 4) * -1);
+  animation-delay: calc(24s / 4 * (4 - 4) * -1);
 }
 
 .item4{
@@ -189,13 +189,13 @@ transform: translateX(-100%);
 @media screen and (min-width:1400px) {
   @keyframes scrollLeft {
     to {
-      left: -540px;
+      left: -200px;
     }
   }
   
   @keyframes scrollRight {
     to {
-      right: -540px;
+      right: -800px;
     }
   }
   .itemLeft {

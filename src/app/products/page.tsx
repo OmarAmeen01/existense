@@ -53,11 +53,15 @@ export default function page() {
 
 
 <article className=' '>
-    <header className='mt-16 md:w-[44rem] m-auto mx-4 min-[1200px]:mx-36 '>
+  <section className=' mx-4 min-[1200px]:mx-36'>
+
+
+    <header className='mt-16 md:w-[44rem] m-auto '>
 
         <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
         <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 max-sm:text-lg text-xl sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
     </header>
+    </section>
     <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
         <Image  className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/Image.jpg" alt='product' width={100000} height={669}/>
     </section>
