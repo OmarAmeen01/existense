@@ -52,13 +52,13 @@ transform: translateX(-100%);
 }
 
 .wrapper {
-  margin-top: 4rem;
+  
   width: 90%;
   max-width: 1700px;
   margin-inline: auto;
   height: 100px;
   position: relative;
-
+  
  
 }
 
@@ -66,13 +66,13 @@ transform: translateX(-100%);
 
 @keyframes scrollLeft {
   to {
-    left: -850px;
+    left: -650px;
   }
 }
 
 @keyframes scrollRight {
   to {
-    right: -850px;
+    right: -650px;
   }
 }
 
@@ -91,103 +91,92 @@ transform: translateX(-100%);
 .itemRight {position: absolute;
 
   animation-timing-function:linear;
-  animation-duration: 14s;
+  animation-duration: 24s;
   animation-iteration-count: infinite;
 }
 
 
 .item0 {
-  animation-delay: calc(14s / 4 * (4- 1) * -1);
+  animation-delay: calc(24s / 4 * (4- 1) * -1);
 }
 
 .item1 {
-  animation-delay: calc(14s / 4 * (4 - 2) * -1);
+  animation-delay: calc(24s / 4 * (4 - 2) * -1);
 }
 
 .item2 {
-  animation-delay: calc(14s / 4 * (4 - 3) * -1);
+  animation-delay: calc(24s / 4 * (4 - 3) * -1);
 }
 
 .item3 {
-  animation-delay: calc(14s / 4 * (4 - 4) * -1);
+  animation-delay: calc(24s / 4 * (4 - 4) * -1);
 }
 
 .item4{
-  animation-delay: calc(14s / 4 * (4 - 5) * -1);
+  animation-delay: calc(24s / 4 * (4 - 5) * -1);
 }
 
 
-@media  screen and (min-width:768px) {
-  .wrapper{
-    margin-top:3rem
-  }
-  
-}
-@media screen and (max-width:766px){
 
-  .wrapper{
-    margin-top:2rem
-  }
-}
 @media screen and (min-width:1050px) {
   @keyframes scrollLeft {
     to {
-      left: -550px;
+      left: -450px;
     }
   }
   
   @keyframes scrollRight {
     to {
-      right: -550px;
+      right: -450px;
     }
   }
  
   .itemLeft {
-    left: max(calc(140px * 4),calc(100% + 140px) );
+    left: max(calc(50px * 4),calc(100% + 50px) );
     animation-name: scrollLeft;
   }
   .itemRight {
-    right: max(calc(140px * 4), calc(100% + 140px) );
+    right: max(calc(50px * 4), calc(100% + 50px) );
     animation-name: scrollRight;
   }
 }
-
 @media screen and (min-width:1180px) {
   @keyframes scrollLeft {
     to {
-      left: -500px;
+      left: -400px;
     }
   }
   
   @keyframes scrollRight {
     to {
-      right: -500px;
+      right: -400px;
     }
   }
   .itemLeft {
-    left: max(calc(70px * 4),calc(100% + 70px) );
+    left: max(calc(50px * 4),calc(100% + 50px) );
     animation-name: scrollLeft;
   }
   .itemRight {
-    right:max(calc(70px * 4),calc(100% + 70px) );
+    right:max(calc(50px * 4),calc(100% + 50px) );
     animation-name: scrollRight;
   }
 }
+
 
 @media screen and (min-width:1350px) {
   @keyframes scrollLeft {
     to {
-      left: -500px;
+      left: -350px;
     }
   }
   
   @keyframes scrollRight {
     to {
-      right: -500px;
+      right: -350px;
     }
   }
   .itemLeft {
-    left: max(calc(150px * 4),calc(100% + 150px) );
+    left: max(calc(50px * 4),calc(100% + 50px) );
     animation-name: scrollLeft;
   }
   .itemRight {

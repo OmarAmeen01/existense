@@ -115,7 +115,7 @@ async function onSubmit(formData:FormInput) {
           >    </div>
       
             <form
-              className="bg-[rgba(248,248,248,0.9)]  z-[15]  min-[676px]:mt-3 p-2 sm:p-8  rounded-lg  w-full  absolute shadow-sm
+              className="bg-[#F8F8F8]  z-[15]  min-[676px]:mt-3 p-2 sm:p-8  rounded-lg  w-full  absolute shadow-sm
               top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]  min-[385px]:max-w-[385px] sm:max-w-[550px]  overflow-hidden min-[676px]:mx-2 
         
               max-[350px]:max-w-[290px] "
@@ -139,10 +139,10 @@ async function onSubmit(formData:FormInput) {
                    
                   />
                 </button>
-                <h2 className="font-sans text-4xl sm:text-5xl p-2 text-center font-[600] mb-4">
+                <h2 className='font-sans font-[500] text-3xl sm:text-4xl  text-center  py-4'>
                   Register
                 </h2>
-                <p className="font-sans text-lg sm:text-xl min-[676px]:py-6 text-center text-gray-500  min-[676px]:px-16">
+                <p className="font-sans text-lg  min-[676px]:py-2 text-center text-gray-500  min-[676px]:px-16">
                   Join Misty&apos;s waitlist now for early access to the future of
                   learning!
                 </p>
@@ -253,7 +253,7 @@ async function onSubmit(formData:FormInput) {
                 </a>
               </p>
                <Button
-                className="relative left-[50%] -translate-x-[50%] text-sm p-[6px] px-6 mt-4 mb-2"
+                className="relative left-[50%] -translate-x-[50%]  p-[6px] px-6 mt-8 mb-2"
                 text={isSubmitting? "wait..." : "submit"}
                 type="submit"
               />

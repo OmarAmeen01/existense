@@ -35,7 +35,7 @@ const detailSec = {
 <section className='mt-12 md:px-10 lg:px-10 min-[1600px]:px-[11.2rem]  '>
         <Image className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/img8.webp" alt='product' width={100000} height={669}/>
 </section>
-<section className='justify-between flex flex-col-reverse  min-[700px]:flex-row rounded-lg bg-white min[400px]:px-10 my-20 min-[700px]:mx-10'>
+<section className='justify-between flex flex-col-reverse  min-[700px]:flex-row rounded-lg bg-[#F8F8F8] min[400px]:px-10 my-20 min-[700px]:mx-10'>
        
        <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] lg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[20rem] px-4 ' >
         <h3 className='font-sans 
