@@ -9,7 +9,7 @@ export default function page() {
 const detailSec = {
       heading:`font-sans 
   text-2xl sm:text-3xl min-md:mb-7  pt-10 pb-2 font-[500]`,
-  para:`font-sans text-[17px]  py-4 sm:py-4 `,
+  para:`font-sans text-[17px]  py-3 `,
   subSection:{
         heading:`font-sans 
  text-xl sm:text-2xl min-md:mb-7 font-[500]`,
