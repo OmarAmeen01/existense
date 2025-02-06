@@ -59,29 +59,29 @@ export default function page() {
     <header className='mt-16 md:w-[44rem] m-auto '>
 
         <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
-        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 max-sm:text-lg text-xl sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
+        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
     </header>
     </section>
     <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
         <Image  className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/Image.jpg" alt='product' width={100000} height={669}/>
     </section>
-    <section className="mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-56 2xl:px-96">
-         <div className='font-sans  py-8 max-md:py-4 text-lg sm:text-xl    
+    <section className="mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-44 xl:px-[350px]">
+         <div className='font-sans  py-8 max-md:py-4 text-lg    
          
         '>
         <p>Misty is a first-of-its-kind AI tutor designed to transform how we learn. Misty is an emotionally Intelligent AI tutor that adapts to every student&apos;s unique learning style, pace ensuring no one is left behind. Misty is not just another online tutor providing recorded video lessons or same resources to each one; it’s a truly personalized AI who treats every student according to his or her grasping power and with that it designs modules so the child can learn at his pace.</p>
         <p className=' mt-4 py-1 '>Unlike other GPT powered AI Chatbot, We are creating a human like AI who mimics one-to-one human interaction by acting and speaking just like a human teacher. You can learn anything, anytime, anywhere from the comfort your home at the most affordable price ever, acting like your live companion.</p>
          </div>
     </section>
-    <section className='mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-20 '>
-            <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>
+    <section className='mx-4 lg:mr-32 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-20 '>
+            <h2 className='font-sans font-[500] text-3xl  text-center  '>
             Key Features of Misty
             </h2>
-<section className='justify-between flex flex-col  gap-16 rounded-lg  min[400px]:px-10 my-20 min-[700px]:mx-10'>
+<section className='justify-between flex flex-col lg:mx-16 2xl:mx-32   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10'>
 {features.map(feature=>{
     return (
-        <div className={`justify-between flex flex-col-reverse md:gap-5  rounded-lg bg-[#F8F8F8]  ${feature.style} `} key={feature.title}> 
-   <div className='self-center md:w-[40rem]  min-[1350px]:mx-32 px-4 lg:w-[44rem] lg:mx-20 ' >
+        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-1 max-w-[1440px] rounded-lg bg-[#F8F8F8]  ${feature.style} `} key={feature.title}> 
+   <div className='self-center md:w-[40rem]  min-[1350px]:mx-8  lg:max-w-[25rem] px-4 lg:w-[25rem] lg:mx-10 ' >
     <h3 className='font-sans 
  text-2xl lg:text-3xl min-md:mb-7  max-md:pt-8 font-[500]'>{feature.title}</h3>
     <p className='font-sans  py-8 max-md:py-4 text-lg    
@@ -89,7 +89,7 @@ export default function page() {
          '>{feature.description}</p>
   </div>
 <div>
-<Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  lg:h-[448px] min-[1450px]:h-[600px]  max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
+<Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  2xl:h-[700px] min-[1100px]:h-[500px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )

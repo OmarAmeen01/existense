@@ -4,10 +4,12 @@ import useStore from "@/store/store";
 import InputComponet from "./InputComponent";
 import Button from "./Button";
 import { useForm } from "react-hook-form";
+import SubmissionSuccess from "./SubmissionSuccess";
 import Image from "next/image";
 import { supabase } from "@/db/db";
 function Register() {
   // States
+  const [isSubmitted,setIsSubmitted]= useState(false)
   const isFormClicked = useStore((state) => state.isFormClicked);
   const setFromState = useStore(
     (state) => state.setFromState
@@ -28,7 +30,7 @@ function Register() {
     phone_number:number,
   }
 
-  const { handleSubmit,register ,formState:{errors,isSubmitting,isSubmitSuccessful },reset} = useForm<FormInput>();
+  const { handleSubmit,register ,formState:{errors,isSubmitting,isSubmitSuccessful},reset} = useForm<FormInput>();
 console.log(errors)
   // Functions
 async function onSubmit(formData:FormInput) {
@@ -38,7 +40,7 @@ async function onSubmit(formData:FormInput) {
     if(data!==null){
       
      const existingUser = data.filter(user=>{
-     return ( formData.email === user.email || Number(formData.phone_number)===user.phone_number)
+     return (Number(formData.phone_number)===user.phone_number)
         
      })
 
@@ -78,6 +80,12 @@ async function onSubmit(formData:FormInput) {
         }))
         setFromState()
         reset()
+        setTimeout(()=>{
+          setIsSubmitted(true)
+        },800)
+        setTimeout(()=>{
+          setIsSubmitted(false)
+        },3000)
       }
     
   
@@ -102,8 +110,14 @@ async function onSubmit(formData:FormInput) {
   }
   }
 
+
+ 
   return (
-    isFormClicked && (
+ 
+    isFormClicked? (
+      <>
+      
+      
       < div className="fixed grid place-items-center overflow-hidden  z-[15] ">
        
         
@@ -198,7 +212,7 @@ async function onSubmit(formData:FormInput) {
                 error={errors.phone_number}
                 className="mb-5"
                 placeholder="Phone Number*"
-                pattern={/^\+?[1-9][0-9]{9,14}$/}
+                pattern={/^\+?[0-9][0-9]{9,14}$/}
                 minLength={10}
                 maxLength={14}
                 register={register}
@@ -206,7 +220,7 @@ async function onSubmit(formData:FormInput) {
                 fieldName="phone_number"
               />
              
-      {errors.phone_number&&<p className="absolute  -top-[18px] left-1 text-[11px] font-sans text-sm text-red-500">{errors.phone_number.message}</p>}
+      {errors.phone_number&&<p className="absolute  left-1 font-sans   -top-[18px] text-[11px] text-red-500">{errors.phone_number.message}</p>}
 </div>
                <div className="relative">
 
@@ -261,7 +275,8 @@ async function onSubmit(formData:FormInput) {
             </div>
            
       </div>
-    )
+      </>
+    ):<SubmissionSuccess isSubmitted={isSubmitted}/>
   );
 }
 

@@ -8,8 +8,8 @@ export default function page() {
 
 const detailSec = {
       heading:`font-sans 
-  text-2xl sm:text-3xl min-md:mb-7   font-[500]`,
-  para:`font-sans text-[17px]  py-4 sm:py-6 `,
+  text-2xl sm:text-3xl min-md:mb-7  pt-10 pb-2 font-[500]`,
+  para:`font-sans text-[17px]  py-4 sm:py-4 `,
   subSection:{
         heading:`font-sans 
  text-xl sm:text-2xl min-md:mb-7 font-[500]`,
@@ -25,7 +25,7 @@ const detailSec = {
 
   return (
      <main>
-    <article className='px-4 min-[1200px]:px-36  '>
+    <article className='px-4 min-[1200px]:px-20  '>
     <header className='mt-16 md:w-[44rem] m-auto'>
 
 <h1  className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>About Us</h1>
@@ -33,11 +33,11 @@ const detailSec = {
 </header>
 
 <section className='mt-12 md:px-10 lg:px-10 min-[1600px]:px-[11.2rem]  '>
-        <Image className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/img8.webp" alt='product' width={100000} height={669}/>
+        <Image className='object-cover w-full h-96 2xl:h-[700px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/img8.webp" alt='product' width={100000} height={669}/>
 </section>
-<section className='justify-between flex flex-col-reverse  min-[700px]:flex-row rounded-lg bg-[#F8F8F8] min[400px]:px-10 my-20 min-[700px]:mx-10'>
+<section className='justify-between flex flex-col-reverse lg:mx-16  min-[1640px]:mx-32  max-w-[1440px] min-[700px]:flex-row rounded-lg bg-[#F8F8F8] min[400px]:px-10 my-20 mt-40 min-[700px]:mx-10 '>
        
-       <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] lg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[20rem] px-4 ' >
+       <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] lg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[25rem] px-4 ' >
         <h3 className='font-sans 
  text-2xl lg:text-3xl min-md:mb-7  max-md:pt-8 font-[500]'>Our vision for the future of education.</h3>
         <p className='font-sans  py-8 max-md:py-4 text-lg    
@@ -47,12 +47,12 @@ const detailSec = {
     <div>
 
       
-    <Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  lg:h-[448px] min-[1450px]:h-[600px]  max-w-full"    src='/img7.jpeg' alt="vision" width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
+    <Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  2xl:h-[700px] min-[1100px]:h-[500px]   max-w-full"   src='/img7.jpeg' alt="vision" width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
     </div>
     
 </section>
 
-<section className="mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-56 2xl:px-96">
+<section className="mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-44 xl:px-[350px] min-[1600px]:px-[480px]">
     <div >
         <h2 className={detailSec.heading}>The Company</h2>
         <p  className={detailSec.para}>
@@ -122,7 +122,7 @@ const detailSec = {
             
     </div>
 </section>
-<section className="mt-16 p-2 min-[400px]:px-4 min-[500px]:p-10 rounded-lg mx-3 min-[500px]:mx-10 md:px-32 min-[1200px]:mx-20 min-[1200px]:px-52 bg-white ">
+<section className="mt-16 p-2 min-[400px]:px-4 min-[500px]:p-10 rounded-lg mx-3 min-[500px]:mx-10 md:px-32 min-[1200px]:mx-20 min-[1200px]:px-52 bg-[#F8F8F8] mb-32">
     <header className='mt-10'>
     <h2 className={detailSec.conclusion.heading}>Conclusion</h2>
     <p className='font-sans text-lg py-4  '>
@@ -151,10 +151,6 @@ const detailSec = {
             We have the potential to redefine education and improve the lives of millions of students globally.
             </p>
            
-         </div>
-         <div className='mt-2'>
-         <h2 className='font-sans 
-    max-[400px]:text-[26px] text-3xl min-md:mb-7  pt-12 max-sm:py-6 font-[500]'>It’s time to build.</h2>
          </div>
 </section>
    <CallToAction/>

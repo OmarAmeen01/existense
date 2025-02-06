@@ -17,13 +17,14 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
     const layerStyle="w-7 h-[2px] transition-all ease-in-out duration-200  bg-black"
       return (<>
       <Register/>
-        <header className={`sticky   -top-1 left-0 bg-[rgba(248,248,248,0.70)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?"max-[800px]:h-[100vh] ":""}`} ref={ref}>
-            <nav className='flex justify-between h-14 md:h-16 lg:mx-20 min-[1350px]:mx-44  '>
+    
+        <header className={`sticky   -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?"max-[800px]:h-[100vh] ":""}`} ref={ref}>
+            <nav className='flex justify-between h-14 md:h-16 lg:mx-14 min-[1350px]:mx-28  '>
                 <Link href="/" className='flex p-3  '>
                <div className='flex relative  overflow-hidden w-12'>
                <Image src="/1.png" alt='Existense' width={200} height={200} className=' absolute -top-6 md:-top-8 left-2 object-cover h-[5rem]  md:h-[6rem] w-40'/>
                </div>
-                <p className='p-1 font-sans text-xl font-[600]  '>Existense</p>
+                <p className='p-1 font-sans text-lg font-[600]  '>Existense</p>
                 </Link>
     
        <div id='hamburger' className="flex-col mt-3 gap-1 trasnition-all ease-in-out duration-300 delay-300 p-2 hidden max-[800px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
@@ -38,17 +39,17 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
             min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 
           
           <ul className='grid min-[800px]:flex  min-[800px]:gap-10    '>
-          <Link href="/" className='p-3 hover:opacity-60 font-sans   text-3xl min-[800px]:text-[17px]' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link>
+          <Link href="/" className='p-2 hover:opacity-60 font-sans  min-[800px]:p-4  text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link>
               {navLinks.map(link=>{
                   return (
-                       <Link href={`/${link. toLowerCase()}`} key={link} className='p-3 hover:opacity-60  font-sans text-3xl min-[800px]:text-[17px]' onClick={()=>setMenuVisibility(prev=>!prev)} >{link}</Link>
+                       <Link href={`/${link. toLowerCase()}`} key={link} className='p-2 min-[800px]:p-4 hover:opacity-60  font-sans text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >{link}</Link>
                   )
               })}
           </ul>
          <Button onClick={()=>{
             setFormState()
             setMenuVisibility(prev=>!prev)
-         }} text='Join Now' className='py-1 max-md:py-2 text-[17px] max-md:text-lg my-3 max-[800px]:mt-8' />
+         }} text='Join Now' className='py-1  max-md:py-2 text-sm my-4 max-[800px]:mt-8 min-[800px]:px-3 ' />
          </div>
             </nav> 
         </header>
