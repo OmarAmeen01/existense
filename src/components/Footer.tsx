@@ -21,7 +21,7 @@ export default function Footer() {
   ]
   return (
     <footer className='flex min-[676px]:flex-row-reverse flex-col justify-center items-center gap-5 min-[676px]:justify-between min-[676px]:px-40 py-10'>
-      <h2 className='font-sans  max-[676px]:font-[600]  min-[676px]:hidden py-2'>English (US)</h2>
+      <h2 className='font-sans  max-[676px]:font-[600]  min-[676px]:hidden py-2  '>English (US)</h2>
      <section className='flex min-[676px]:gap-8  '>
       {socialIcons.map(icon=>{
         return (

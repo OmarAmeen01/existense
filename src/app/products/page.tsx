@@ -52,16 +52,16 @@ export default function page() {
     <main>
 
 
-<article className='px-4 min-[1200px]:px-36  '>
-    <header className='mt-16 md:w-[44rem] m-auto'>
+<article className=' '>
+    <header className='mt-16 md:w-[44rem] m-auto mx-4 min-[1200px]:mx-36 '>
 
         <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
         <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 max-sm:text-lg text-xl sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
     </header>
-    <section className='mt-12 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
+    <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
         <Image  className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/Image.jpg" alt='product' width={100000} height={669}/>
     </section>
-    <section className="mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-56 2xl:px-96">
+    <section className="mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-36 lg:px-56 2xl:px-96">
          <div className='font-sans  py-8 max-md:py-4 text-lg sm:text-xl    
          
         '>
@@ -69,7 +69,7 @@ export default function page() {
         <p className=' mt-4 py-1 '>Unlike other GPT powered AI Chatbot, We are creating a human like AI who mimics one-to-one human interaction by acting and speaking just like a human teacher. You can learn anything, anytime, anywhere from the comfort your home at the most affordable price ever, acting like your live companion.</p>
          </div>
     </section>
-    <section className='mt-[72px] min-[676px]:mt-20 '>
+    <section className='mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-20 '>
             <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>
             Key Features of Misty
             </h2>
@@ -93,12 +93,12 @@ export default function page() {
 </section>
 
     </section>
-<section className='mt-[72px] min-[676px]:mt-20 '>
+<section className=' mt-[72px] min-[676px]:mt-20 '>
     <header>
-        <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Real Reviews</h2>
-        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 text-xl sm:w-[38rem] m-auto'>Tested by 1000+ students.</p>
+        <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  '>Real Reviews</h2>
+        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-3 max-[400px]:px-4 text-xl sm:w-[38rem] m-auto'>Tested by 1000+ students.</p>
     </header>
-   <section className='h-[28rem] md:h-[38rem] overflow-hidden'>
+   <section className='h-[28rem] md:h-[38rem] overflow-hidden mt-10'>
   <div className="flex  wrapper">{reviews[0].map((review,index)=>{
     return (
         <div className={` itemLeft  h-[77px]  w-[340px]  bg-[#F8F8F8]  rounded-lg item${index}`} key={review.slice(0,4)}>

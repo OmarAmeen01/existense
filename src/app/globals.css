@@ -91,25 +91,25 @@ transform: translateX(-100%);
 .itemRight {position: absolute;
 
   animation-timing-function:linear;
-  animation-duration: 24s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
 }
 
 
 .item0 {
-  animation-delay: calc(24s / 4 * (4- 1) * -1);
+  animation-delay: calc(14s / 4 * (4- 1) * -1);
 }
 
 .item1 {
-  animation-delay: calc(24s / 4 * (4 - 2) * -1);
+  animation-delay: calc(14s / 4 * (4 - 2) * -1);
 }
 
 .item2 {
-  animation-delay: calc(24s / 4 * (4 - 3) * -1);
+  animation-delay: calc(14s / 4 * (4 - 3) * -1);
 }
 
 .item3 {
-  animation-delay: calc(24s / 4 * (4 - 4) * -1);
+  animation-delay: calc(14s / 4 * (4 - 4) * -1);
 }
 
 .item4{
@@ -140,7 +140,7 @@ transform: translateX(-100%);
     animation-name: scrollRight;
   }
 }
-@media screen and (min-width:1180px) {
+@media screen and (min-width:1120px) {
   @keyframes scrollLeft {
     to {
       left: -400px;
@@ -163,30 +163,30 @@ transform: translateX(-100%);
 }
 
 
-@media screen and (min-width:1350px) {
+@media screen and (min-width:1250px) {
   @keyframes scrollLeft {
     to {
-      left: -350px;
+      left: -400px;
     }
   }
   
   @keyframes scrollRight {
     to {
-      right: -350px;
+      right: -400px;
     }
   }
   .itemLeft {
-    left: max(calc(50px * 4),calc(100% + 50px) );
+    left: max(calc(40px * 4),calc(100% + 40px) );
     animation-name: scrollLeft;
   }
   .itemRight {
-    right:max(calc(150px * 4),calc(100% + 150px) );
+    right:max(calc(40px * 4),calc(100% + 40px) );
     animation-name: scrollRight;
   }
 }
 
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1400px) {
   @keyframes scrollLeft {
     to {
       left: -540px;
@@ -199,11 +199,11 @@ transform: translateX(-100%);
     }
   }
   .itemLeft {
-    left: max(calc(1px * 4),calc(90% + 1px) );
+    left: max(calc(0 * 4),calc(100% + 1px) );
     animation-name: scrollLeft;
   }
   .itemRight {
-    right:max(calc(1px * 4),calc(90% + 1px) );
+    right:max(calc(1px * 4),calc(100% + 1px) );
     animation-name: scrollRight;
   }
 }

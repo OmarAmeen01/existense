@@ -47,7 +47,7 @@ const detailSec = {
     <div>
 
       
-    <Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  lg:h-[448px] min-[1450px]:h-[600px]  max-w-full"    src='/img7.jpg' alt="vision" width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
+    <Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  lg:h-[448px] min-[1450px]:h-[600px]  max-w-full"    src='/img7.jpeg' alt="vision" width={342} height={400} quality={100} style={{objectFit:"cover"}}/>
     </div>
     
 </section>
