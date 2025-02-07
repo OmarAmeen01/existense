@@ -26,7 +26,7 @@ const detailSec = {
   return (
      <main>
     <article className='px-4 min-[1200px]:px-20  '>
-    <header className='mt-16 md:w-[44rem] m-auto'>
+    <header className='mt-24 md:w-[44rem] m-auto'>
 
 <h1  className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>About Us</h1>
 <p className='text-center  min-[480px]:w-[24rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[32rem] m-auto' >An initiative with very advanced and initiative technology, aiming in providing meaningful AI solutions</p>

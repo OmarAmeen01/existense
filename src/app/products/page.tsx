@@ -56,7 +56,7 @@ export default function page() {
   <section className=' mx-4 min-[1200px]:mx-36'>
 
 
-    <header className='mt-16 md:w-[44rem] m-auto '>
+    <header className='mt-24 md:w-[44rem] m-auto '>
 
         <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
         <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
