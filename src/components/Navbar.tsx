@@ -18,7 +18,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
       return (<>
       <Register/>
     
-        <header className={`sticky   -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?"max-[800px]:h-[100vh] ":""}`} ref={ref}>
+        <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?" h-[100vh] w-[100vw] absolute bg-[rgba(248,248,248,0.60)] ":"sticky"}`} ref={ref}>
             <nav className='flex justify-between h-14 md:h-16 lg:mx-14 min-[1350px]:mx-28  '>
                 <Link href="/" className='flex p-3  '>
                <div className='flex relative  overflow-hidden w-12'>
@@ -27,7 +27,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
                 <p className='p-1 font-sans text-lg font-[600]  '>Existense</p>
                 </Link>
     
-       <div id='hamburger' className="flex-col mt-3 gap-1 trasnition-all ease-in-out duration-300 delay-300 p-2 hidden max-[800px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
+       <div id='hamburger' className="flex-col mt-3 gap-1 trasnition-all ease-in-out duration-300 delay-300 max-[800px]:mr-7 p-2 hidden max-[800px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
        
         <div className={`${layerStyle} ${isMenuVisible?"rotate-[45deg]  ":""}`}></div>
         <div className={`${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>
@@ -39,17 +39,17 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
             min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 
           
           <ul className='grid min-[800px]:flex  min-[800px]:gap-10    '>
-          <Link href="/" className='p-2 hover:opacity-60 font-sans  min-[800px]:p-4  text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link>
+          <Link href="/" className=' hover:opacity-60 py-2 font-sans  min-[800px]:p-4  text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link>
               {navLinks.map(link=>{
                   return (
-                       <Link href={`/${link. toLowerCase()}`} key={link} className='p-2 min-[800px]:p-4 hover:opacity-60  font-sans text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >{link}</Link>
+                       <Link href={`/${link. toLowerCase()}`} key={link} className='py-2 min-[800px]:p-4 hover:opacity-60  font-sans text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >{link}</Link>
                   )
               })}
           </ul>
          <Button onClick={()=>{
             setFormState()
             setMenuVisibility(prev=>!prev)
-         }} text='Join Now' className='py-1  max-md:py-2 text-sm my-4 max-[800px]:mt-8 min-[800px]:px-3 ' />
+         }} text='Join Now' className='py-1  max-md:py-2 text-sm my-4 max-[800px]:mt-5 min-[800px]:px-2 px-3' />
          </div>
             </nav> 
         </header>

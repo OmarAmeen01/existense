@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} overflow-x-hidden font-sans bg-white `}
+        className={`${openSans.variable} overflow-x-hidden font-sans bg-white`}
       >
 
         <Navbar navLinks={navLinks}/>

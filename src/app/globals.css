@@ -21,7 +21,7 @@
 
 @layer components {
   .mobileNav{
-  @apply  absolute w-full h-[100vh]  z-30  top-[4rem] p-10 
+  @apply  absolute w-full h-[100vh]  z-30  top-[4rem] p-5 
   }
 }
 
@@ -235,12 +235,6 @@ transform: translateX(-100%);
     animation-name: scrollRight;
   }
 }
-
-
-
-
-
-
 
 /* global styles */
 
