@@ -18,7 +18,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
       return (<>
       <Register/>
     
-        <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?" h-[100vh] w-[100vw] absolute bg-[rgba(248,248,248,0.60)] ":"sticky"}`} ref={ref}>
+        <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?"  max-[800px]:h-[100vh]  max-[800px]:w-[100vw]  max-[800px]:absolute  max-[800px]:bg-[rgba(248,248,248,0.60)] ":"sticky"}`} ref={ref}>
             <nav className='flex justify-between h-14 md:h-16 lg:mx-14 min-[1350px]:mx-28  '>
                 <Link href="/" className='flex p-3  '>
                <div className='flex relative  overflow-hidden w-12'>
@@ -34,7 +34,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
         <div className={`${layerStyle}  bg-black ${isMenuVisible?"-rotate-[45deg] -translate-y-[12px]":""}`}></div>
     
        </div>
-          <div className={`max-[800px]:mobileNav w-[60%] min-[800px]:flex 
+          <div className={`max-[800apx]:mobileNav w-[60%] min-[800px]:flex 
           
             min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 
           

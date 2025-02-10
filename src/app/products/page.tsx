@@ -81,7 +81,7 @@ export default function page() {
 {features.map(feature=>{
     return (
         <div className={`justify-between flex flex-col-reverse md:gap-5 mb-1 max-w-[1440px] rounded-lg bg-[#F8F8F8]  ${feature.style} `} key={feature.title}> 
-   <div className='self-center md:w-[40rem]  min-[1350px]:mx-8  lg:max-w-[25rem] px-4 lg:w-[25rem] lg:mx-10 ' >
+   <div className='self-center  min-[1350px]:mx-8 min-[700px]:max-w-[25rem] px-4 min-[700]:w-[25rem] lg:mx-10 ' >
     <h3 className='font-sans 
  text-2xl lg:text-3xl min-md:mb-7  max-md:pt-8 font-[500]'>{feature.title}</h3>
     <p className='font-sans  py-8 max-md:py-4 text-lg    
