@@ -34,11 +34,9 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
         <div className={`${layerStyle}  bg-black ${isMenuVisible?"-rotate-[45deg] -translate-y-[12px]":""}`}></div>
     
        </div>
-          <div className={`max-[800apx]:mobileNav w-[60%] min-[800px]:flex 
+          <div className={`max-[800px]:mobileNav w-[60%] min-[800px]:flex min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 
           
-            min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 
-          
-          <ul className='grid min-[800px]:flex  min-[800px]:gap-10    '>
+          <ul className='grid min-[800px]:flex min-[800px]:gap-10    '>
           <Link href="/" className=' hover:opacity-60 py-2 font-sans  min-[800px]:p-4  text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link>
               {navLinks.map(link=>{
                   return (

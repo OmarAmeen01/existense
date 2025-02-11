@@ -59,7 +59,7 @@ export default function page() {
     <header className='mt-24 md:w-[44rem] m-auto '>
 
         <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
-        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
+        <p className='text-center  min-[900px]:w-[208rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
     </header>
     </section>
     <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>

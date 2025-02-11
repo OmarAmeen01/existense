@@ -37,9 +37,9 @@ const detailSec = {
 </section>
 <section className='justify-between flex flex-col-reverse lg:mx-16  min-[1640px]:mx-32  max-w-[1440px] min-[700px]:flex-row rounded-lg bg-[#F8F8F8] min[400px]:px-10 my-20 mt-40 min-[700px]:mx-10 '>
        
-       <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] lg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[25rem] px-4 ' >
+       <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] slg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[25rem] px-4 ' >
         <h3 className='font-sans 
- text-2xl lg:text-3xl min-md:mb-7  max-md:pt-8 font-[500]'>Our vision for the future of education.</h3>
+ text-3xl lg:text-4xl min-md:mb-7  max-md:pt-8 font-[500]'>Our vision for the future of education.</h3>
         <p className='font-sans  py-8 max-md:py-4 text-lg    
          
         '>To revolutionize personalized learning through AI by creating an emotionally intelligent AI tutor that can transform how we learn.</p>
