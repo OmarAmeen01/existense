@@ -122,7 +122,7 @@ const detailSec = {
             
     </div>
 </section>
-<section className="mt-16 p-2 min-[400px]:px-4  rounded-lg mx-3  px-4 sm:px-28 md:px-36 lg:px-56 xl:px-[350px] 2xl:px-[390px] min-[1600px]:px-[480px] bg-[#F8F8F8] mb-32">
+<section className="mt-16 p-2  rounded-lg mx-3 min-[1200px]:mx-20 min-[500px]:mx-10  px-4 sm:px-20 md:px-28 lg:px-44 min-[1200px]:px-36 xl:px-64 2xl:px-[300px] min-[1600px]:px-[400px] bg-[#F8F8F8] mb-32">
     <header className='mt-10'>
     <h2 className={detailSec.conclusion.heading}>Conclusion</h2>
     <p className='font-sans text-lg py-4  '>
