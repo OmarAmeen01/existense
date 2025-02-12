@@ -5,7 +5,7 @@ import Button from './Button'
 export default function CallToAction() {
     const setFormState= useStore(state=>state.setFromState)
   return (
-    <section className='bg-[#F8F8F8] h-[27rem] py-14 px-8 sm:p-14 items-center min-[676p rounded-lg mx-3 min-[1200px]:mx-20 min-[500px]:mx-10 mb-16 '>
+    <section className='bg-[#F8F8F8] h-[27rem] py-14 px-8 sm:p-14 items-center rounded-lg mx-3 min-[1200px]:mx-20 min-[500px]:mx-10 mb-16 '>
     <header className='mt-24 '>
         <h2 className='font-sans  tracking-tight 
          max-[400px]:

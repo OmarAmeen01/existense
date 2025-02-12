@@ -32,12 +32,12 @@ const detailSec = {
 <p className='text-center  min-[480px]:w-[24rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[32rem] m-auto' >An initiative with very advanced and initiative technology, aiming in providing meaningful AI solutions</p>
 </header>
 
-<section className='mt-12 md:px-10 lg:px-10 min-[1600px]:px-[11.2rem]  '>
+<section className='mt-12 md:px-10 lg:px-28 min-[1600px]:px-[11.2rem]  '>
         <Image className='object-cover w-full h-96 2xl:h-[700px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/img8.webp" alt='product' width={100000} height={669}/>
 </section>
-<section className='justify-between flex flex-col-reverse lg:mx-16  min-[1640px]:mx-32  max-w-[1440px] min-[700px]:flex-row rounded-lg bg-[#F8F8F8] min[400px]:px-10 my-20 mt-40 min-[700px]:mx-10 '>
+<section className='justify-between flex flex-col-reverse lg:mx-16  min-[1640px]:mx-32  max-w-[1440px] min-[700px]:flex-row rounded-lg bg-[#F8F8F8] min[400px]:px-10 my-20  min-[700px]:mx-10 '>
        
-       <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] slg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[25rem] px-4 ' >
+       <div className='  min-[700px]:flex sm:flex-col  min-[700px]:justify-center min-[700px]:items-center min-[700px]:w-[18rem] lg:w-[34rem] 2xl:ml-52 min-[700px]:mx-8 lg:mx-32 lg:max-w-[25rem] px-4 ' >
         <h3 className='font-sans 
  text-3xl lg:text-4xl min-md:mb-7  max-md:pt-8 font-[500]'>Our vision for the future of education.</h3>
         <p className='font-sans  py-8 max-md:py-4 text-lg    
@@ -122,7 +122,7 @@ const detailSec = {
             
     </div>
 </section>
-<section className="mt-16 p-2 min-[400px]:px-4 min-[500px]:p-10 rounded-lg mx-3 min-[500px]:mx-10 md:px-32 min-[1200px]:mx-20 min-[1200px]:px-52 bg-[#F8F8F8] mb-32">
+<section className="mt-16 p-2 min-[400px]:px-4  rounded-lg mx-3  px-4 sm:mx-28 md:mx-36 lg:mx-56 xl:mx-[350px] 2xl:mx-[390px] min-[1600px]:mx-[480px] bg-[#F8F8F8] mb-32">
     <header className='mt-10'>
     <h2 className={detailSec.conclusion.heading}>Conclusion</h2>
     <p className='font-sans text-lg py-4  '>

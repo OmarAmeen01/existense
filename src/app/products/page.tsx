@@ -59,7 +59,7 @@ export default function page() {
     <header className='mt-24 md:w-[44rem] m-auto '>
 
         <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
-        <p className='text-center  min-[900px]:w-[208rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
+        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
     </header>
     </section>
     <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
@@ -74,22 +74,22 @@ export default function page() {
          </div>
     </section>
     <section className='mx-4 lg:mr-32 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-20 '>
-            <h2 className='font-sans font-[500] text-3xl  text-center  '>
+            <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  '>
             Key Features of Misty
             </h2>
-<section className='justify-between flex flex-col lg:mx-16 2xl:mx-32   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10'>
+<section className='justify-between flex flex-col lg:mx-16 2xl:mx-40   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
 {features.map(feature=>{
     return (
-        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-1 max-w-[1440px] rounded-lg bg-[#F8F8F8]  ${feature.style} `} key={feature.title}> 
-   <div className='self-center  min-[1350px]:mx-8 min-[700px]:max-w-[25rem] px-4 min-[700]:w-[25rem] lg:mx-10 ' >
+        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-6 max-w-[1440px] rounded-lg bg-[#F8F8F8]  ${feature.style} `} key={feature.title}> 
+   <div className='self-center  min-[1350px]:mx-8 min-[700px]:max-w-[27rem] px-4 min-[700px]:w-[27rem] lg:mx-10 ' >
     <h3 className='font-sans 
- text-2xl lg:text-3xl min-md:mb-7  max-md:pt-8 font-[500]'>{feature.title}</h3>
+ text-3xl lg:text-4xl min-md:mb-7  max-md:pt-8 font-[500]'>{feature.title}</h3>
     <p className='font-sans  py-8 max-md:py-4 text-lg    
          
          '>{feature.description}</p>
   </div>
 <div>
-<Image className=" w-full    rounded-lg lg:w-[40rem] min-[700px]:h-[380px]  2xl:h-[700px] min-[1100px]:h-[500px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
+<Image className=" w-full    rounded-lg lg:w-[35rem] min-[700px]:h-[380px]  2xl:h-[700px] min-[1100px]:h-[500px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )

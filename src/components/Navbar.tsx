@@ -47,7 +47,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
          <Button onClick={()=>{
             setFormState()
             setMenuVisibility(prev=>!prev)
-         }} text='Join Now' className='py-1  max-md:py-2 text-sm my-4 max-[800px]:mt-5 min-[800px]:px-2 px-3' />
+         }} text='Join Now' className='py-1  max-md:py-2 text-sm my-3 max-[800px]:mt-5 min-[800px]:px-3 px-3' />
          </div>
             </nav> 
         </header>
