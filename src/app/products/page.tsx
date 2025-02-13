@@ -77,11 +77,11 @@ export default function page() {
             <h2 className='font-sans font-[500] text-3xl sm:text-4xl 2xl:text-5xl  text-center  '>
             Key Features of Misty
             </h2>
-<section className='justify-between flex flex-col lg:mx-16 2xl:mx-28   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
+<section className='justify-between flex flex-col lg:mx-16 md:mx-12 2xl:mx-28   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
 {features.map(feature=>{
     return (
-        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-6 max-w-[1306px] 2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
-   <div className='self-center  lg:mx-24 2xl:mx-24 md:max-w-[20rem] 2xl:max-w-[26rem] px-4   ' >
+        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-6 max-w-[1306px]  2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
+   <div className='self-center  lg:mx-24  2xl:mx-24 md:max-w-[20rem] 2xl:max-w-[26rem] px-4   ' >
     <h3 className='font-sans 
  text-2xl 2xl:text-3xl min-md:mb-7 max-md:pt-8 font-[500]'>{feature.title}</h3>
     <p className='font-sans  py-8 max-md:py-4 text-lg    
@@ -89,7 +89,7 @@ export default function page() {
          '>{feature.description}</p>
   </div>
 <div>
-<Image className=" w-full    rounded-lg  lg:w-[27rem] 2xl:w-[35rem] min-[700px]:h-[300px]  2xl:h-[532px] min-[1100px]:h-[434px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
+<Image className=" w-full    rounded-lg  lg:w-[27rem] 2xl:w-[35rem] min-[700px]:h-[450px]  2xl:h-[532px] min-[1100px]:h-[434px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )
