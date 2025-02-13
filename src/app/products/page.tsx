@@ -58,12 +58,12 @@ export default function page() {
 
     <header className='mt-24 md:w-[44rem] m-auto '>
 
-        <h1 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  py-4'>Introducting Misty</h1>
+        <h1 className='font-sans font-[500] text-3xl sm:text-4xl 2xl::text-5xl  text-center  py-4'>Introducting Misty</h1>
         <p className='text-center  min-[480px]:w-[28rem] font-sans  py-4 max-[400px]:px-4 text-lg sm:w-[38rem] m-auto'>The revolutionary AI tutor designed to transform how we learn.</p>
     </header>
     </section>
-    <section className='mt-12 mx-4 min-[1200px]:mx-36 px-4 sm:px-11 min-[1350px]:px-40 md:px-20 lg:px-30  '>
-        <Image  className='object-cover w-full h-96 2xl:h-[645px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg ' src="/Image.jpg" alt='product' width={100000} height={669}/>
+    <section className='mt-12 md:px-10 lg:px-48 min-[1600px]:px-[14rem]  '>
+        <Image  className='object-cover w-full h-96 2xl:h-[700px] min-[1100px]:h-[500px] max-sm:h-64  max-[370px]:h-44 rounded-lg  ' src="/img8.webp" alt='product' width={100000} height={669}/>
     </section>
     <section className="mx-4 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-28 min-[500px]:px-16 px-4 sm:px-28 md:px-44 lg:px-64 xl:px-72 2xl:px-96 min-[1660px]:px-[430px]">
          <div className='font-sans  py-8 max-md:py-4 text-lg    
@@ -74,22 +74,22 @@ export default function page() {
          </div>
     </section>
     <section className='mx-4 lg:mr-32 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-20 '>
-            <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  '>
+            <h2 className='font-sans font-[500] text-3xl sm:text-4xl 2xl:text-5xl  text-center  '>
             Key Features of Misty
             </h2>
-<section className='justify-between flex flex-col lg:mx-16 2xl:mx-40   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
+<section className='justify-between flex flex-col lg:mx-16 2xl:mx-28   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
 {features.map(feature=>{
     return (
-        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-6 max-w-[1440px] rounded-lg bg-[#F8F8F8]  ${feature.style} `} key={feature.title}> 
-   <div className='self-center  min-[1350px]:mx-8 min-[700px]:max-w-[27rem] px-4 min-[700px]:w-[27rem] lg:mx-10 ' >
+        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-6 max-w-[1306px] 2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
+   <div className='self-center  lg:mx-24 2xl:mx-24 md:max-w-[20rem] 2xl:max-w-[26rem] px-4   ' >
     <h3 className='font-sans 
- text-3xl lg:text-4xl min-md:mb-7  max-md:pt-8 font-[500]'>{feature.title}</h3>
+ text-2xl 2xl:text-3xl min-md:mb-7 max-md:pt-8 font-[500]'>{feature.title}</h3>
     <p className='font-sans  py-8 max-md:py-4 text-lg    
          
          '>{feature.description}</p>
   </div>
 <div>
-<Image className=" w-full    rounded-lg lg:w-[35rem] min-[700px]:h-[380px]  2xl:h-[700px] min-[1100px]:h-[500px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
+<Image className=" w-full    rounded-lg  lg:w-[27rem] 2xl:w-[35rem] min-[700px]:h-[300px]  2xl:h-[532px] min-[1100px]:h-[434px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )
@@ -99,8 +99,8 @@ export default function page() {
     </section>
 <section className=' mt-[72px] min-[676px]:mt-20'>
     <header>
-        <h2 className='font-sans font-[500] text-3xl sm:text-4xl md:text-5xl  text-center  '>Real Reviews</h2>
-        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-3 max-[400px]:px-4 text-xl sm:w-[38rem] m-auto'>Tested by 1000+ students.</p>
+        <h2 className='font-sans font-[500] text-3xl sm:text-4xl 2xl:text-5xl  text-center  '>Real Reviews</h2>
+        <p className='text-center  min-[480px]:w-[28rem] font-sans  py-3 max-[400px]:px-4 text-lg  2xl:text-xl sm:w-[38rem] m-auto'>Tested by 1000+ students.</p>
     </header>
    <section className='  overflow-hidden mt-10  mx-4 min-[1250px]:w-[1080px] min-[1400px]:w-[1224px] mr-auto ml-auto mb-28'>
   <div className="flex  wrapper">{reviews[0].map((review,index)=>{

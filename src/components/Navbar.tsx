@@ -19,10 +19,10 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
       <Register/>
     
         <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?"  max-[800px]:h-[100vh]  max-[800px]:w-[100vw]  max-[800px]:absolute  max-[800px]:bg-[rgba(248,248,248,0.60)] ":"sticky"}`} ref={ref}>
-            <nav className='flex justify-between h-14 md:h-16 lg:mx-14 min-[1350px]:mx-28  '>
+            <nav className='flex justify-between h-14 2xl:h-16 lg:mx-14 min-[1350px]:mx-28  '>
                 <Link href="/" className='flex p-3  '>
                <div className='flex relative  overflow-hidden w-12'>
-               <Image src="/1.png" alt='Existense' width={200} height={200} className=' absolute -top-6 md:-top-8 left-2 object-cover h-[5rem]  md:h-[6rem] w-40'/>
+               <Image src="/1.png" alt='Existense' width={200} height={200} className=' absolute -top-6 2xl:-top-8 left-2 object-cover h-[5rem]  2xl:h-[6rem] w-40'/>
                </div>
                 <p className='p-1 font-sans text-lg font-[600]  '>Existense</p>
                 </Link>
@@ -36,11 +36,11 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
        </div>
           <div className={`max-[800px]:mobileNav w-[60%] min-[800px]:flex min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 
           
-          <ul className='grid min-[800px]:flex min-[800px]:gap-10    '>
-          <Link href="/" className=' hover:opacity-60 py-2 font-sans  min-[800px]:p-4  text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link>
+          <ul className='grid min-[800px]:flex min-[800px]:gap-6    '>
+          <Link href="/" className=' hover:opacity-60 py-2 font-sans text-sm 2xl:text-lg min-[800px]:p-4   ' onClick={()=>setMenuVisibility(prev=>!prev)} >Home</Link> 
               {navLinks.map(link=>{
                   return (
-                       <Link href={`/${link. toLowerCase()}`} key={link} className='py-2 min-[800px]:p-4 hover:opacity-60  font-sans text-xl min-[800px]:text-[16px]' onClick={()=>setMenuVisibility(prev=>!prev)} >{link}</Link>
+                       <Link href={`/${link. toLowerCase()}`} key={link} className='py-2 text-sm min-[800px]:p-4 2xl:text-lg hover:opacity-60  font-sans ' onClick={()=>setMenuVisibility(prev=>!prev)} >{link}</Link>
                   )
               })}
           </ul>
