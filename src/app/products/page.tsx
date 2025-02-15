@@ -9,31 +9,40 @@ export default function page() {
             title:"24/7 Access",
             description:"Misty offers 24/7 access. This way, the student can learn and get help from anywhere, at any time. Be it homework or midnight exam preparation, Misty is there to guide them in detail, acting like your live companion.",
             image:"/img1.png",
-            style:"md:flex-row "
+            style:"min-[800px]:flex-row ",
+              textStyle: " lg:ml-16 xl:ml-40"
         },
         {
             title:"Emotional Intelligence",
             description:"Misty has the ability to understand students' emotional states and react accordingly for a better learning experience. Based on signs of stress, frustration, or disengagement, Misty can personally support students.",
             image:"/img2.jpg",
-            style:"md:flex-row md:flex-row-reverse"
+            style:"min-[800px]:flex-row min-[800px]:flex-row-reverse"
+            ,
+              textStyle: " lg:mr-16 xl:mr-40"
         },
         {
             title:"Hyper Personalization",
             description:"Misty’s actual personalization extends beyond the scope of all education tools since after each lesson, Misty collects data of the child and varies the teaching approach according to the strengths, weaknesses of each student.",
             image:"/img3.jpg",
-             style:"md:flex-row"
+             style:"min-[800px]:flex-row"
+             ,
+              textStyle: " lg:ml-16 xl:ml-40"
         },
         {
             title:"95% Accurate Test Preparation",
             description:"Misty’s test preparation is 95% accurate because it uses AI in the generation of question papers and practice tests that mimic the actual format of the exams, based on historical data and trends.",
             image:"/img4.jpg",
-             style:"md:flex-row md:flex-row-reverse"
+             style:"min-[800px]:flex-row min-[800px]:flex-row-reverse"
+           ,
+              textStyle: " lg:mr-16 xl:mr-40"
         },
         {
             title:"Multilingual",
             description:"With Misty, language is not a barrier but a bridge to better understanding and connection. By supporting 95+ languages, Misty ensures that learning is accessible to students from diverse linguistic backgrounds.",
             image:"/img5.jpg",
-            style:"md:flex-row "
+            style:"min-[800px]:flex-row "
+            ,
+              textStyle: "xl:ml-40 lg:ml-16"
         }
     ]
 
@@ -73,23 +82,26 @@ export default function page() {
         <p className=' mt-4 py-1 '>Unlike other GPT powered AI Chatbot, We are creating a human like AI who mimics one-to-one human interaction by acting and speaking just like a human teacher. You can learn anything, anytime, anywhere from the comfort your home at the most affordable price ever, acting like your live companion.</p>
          </div>
     </section>
-    <section className='mx-4 lg:mr-32 min-[1200px]:mx-36 mt-[72px] min-[676px]:mt-20 '>
+    <section className='mx-4 mt-[72px] lg:max-w-[1270px] xl:max-w-[1390px] 2xl:min-w-[1500px] min-[676px]:mt-20  lg:mx-auto'>
             <h2 className='font-sans font-[500] text-3xl sm:text-4xl 2xl:text-5xl  text-center  '>
             Key Features of Misty
             </h2>
-<section className='justify-between flex flex-col lg:mx-16 md:mx-12 2xl:mx-28   gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
+<section className='justify-between flex flex-col lg:mx-16 md:mx-12 2xl:mx-28 mx-auto gap-16 rounded-lg min[400px]:px-10 my-20 mt-16 min-[700px]:mx-10 '>
 {features.map(feature=>{
     return (
-        <div className={`justify-between flex flex-col-reverse md:gap-5 mb-6 max-w-[1306px]  2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
-   <div className='self-center  lg:mx-24  2xl:mx-24 md:max-w-[20rem] 2xl:max-w-[26rem] px-4   ' >
+        <div className={`justify-between flex flex-col-reverse
+        min-[800px]:max-w-[769px]
+         lg:max-w-[1140px] xl:w-[1390px] xl:min-w-[1200px] mb-6 min-[940px]:mx-auto  2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
+   <div className={`self-center min-[800px]:max-w-[18rem] min-[800px]:mx-8 lg:max-w-[23rem]  px-4 pt-8 ${feature.textStyle} `} >
     <h3 className='font-sans 
- text-2xl 2xl:text-3xl min-md:mb-7 max-md:pt-8 font-[500]'>{feature.title}</h3>
-    <p className='font-sans  py-8 max-md:py-4 text-lg    
+ text-2xl 2xl:text-3xl min-md:mb-7 min-[800px]:pt-8 font-[500]'>{feature.title}</h3>
+    <p className='font-sans  py-8 max-[800px]:py-4 text-lg    
          
          '>{feature.description}</p>
   </div>
 <div>
-<Image className=" w-full    rounded-lg  lg:w-[27rem] 2xl:w-[35rem] min-[700px]:h-[450px]  2xl:h-[532px] min-[1100px]:h-[434px]   max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
+<Image className=" w-full  
+min-[800px]:max-w-[23rem]   rounded-lg  lg:min-w-[27.5rem] xl:min-w-[36.6rem]   min-[700px]:h-[450px]  xl:h-[532px] min-[1100px]:h-[434px] max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )
