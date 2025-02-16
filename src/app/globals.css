@@ -97,30 +97,58 @@ transform: translateX(-100%);
 .itemRight {position: absolute;
 
   animation-timing-function:linear;
-  animation-duration: 24s;
+  animation-duration: 36s;
   animation-iteration-count: infinite;
 }
 
 
 .item0 {
-  animation-delay: calc(24s / 4 * (4- 1) * -1);
+  animation-delay: calc(36s / 14 * (14- 1) * -1);
 }
 
 .item1 {
-  animation-delay: calc(24s / 4 * (4 - 2) * -1);
+  animation-delay: calc(36s / 14 * (14 - 2) * -1);
 }
 
 .item2 {
-  animation-delay: calc(24s / 4 * (4 - 3) * -1);
+  animation-delay: calc(36s / 14 * (14 - 3) * -1);
 }
 
 .item3 {
-  animation-delay: calc(24s / 4 * (4 - 4) * -1);
+  animation-delay: calc(36s / 14 * (14 - 4) * -1);
 }
 
 .item4{
-  animation-delay: calc(24s / 4 * (4 - 5) * -1);
+  animation-delay: calc(36s / 14 * (14 - 5) * -1);
 }
+.item5{
+  animation-delay: calc(36s / 14 * (14 - 6) * -1);
+}
+.item6{
+  animation-delay: calc(36s / 14 * (14 - 7) * -1);
+}
+.item7{
+  animation-delay: calc(36s / 14 * (14 - 8) * -1);
+}
+.item8{
+  animation-delay: calc(36s / 14 * (14 - 9) * -1);
+}
+.item9{
+  animation-delay: calc(36s / 14 * (14 - 10) * -1);
+}
+.item10{
+  animation-delay: calc(36s / 14 * (14 - 11) * -1);
+}
+.item11{
+  animation-delay: calc(36s / 14 * (14 - 12) * -1);
+}
+.item12{
+  animation-delay: calc(36s / 14 * (14 - 13) * -1);
+}
+.item13{
+  animation-delay: calc(36s / 14 * (14 - 14) * -1);
+}
+
 
 
 
@@ -212,7 +240,7 @@ transform: translateX(-100%);
     right:max(calc(1px * 4),calc(100% + 1px) );
     animation-name: scrollRight;
   }
-}
+}  
 
 @media screen and (min-width:1550px) {
   @keyframes scrollLeft {
