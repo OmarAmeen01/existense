@@ -91,7 +91,7 @@ export default function page() {
     return (
         <div className={`justify-between flex flex-col-reverse
         min-[800px]:max-w-[769px]
-         lg:max-w-[1140px] xl:w-[1390px] xl:min-w-[1200px] mb-6 min-[940px]:mx-auto  2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
+         lg:max-w-[1140px] xl:w-[1390px] xl:min-w-[1200px] mb-6 min-[940px]:mx-auto min-[940px]:min-w-[769px]  2xl:mx-4 rounded-lg bg-[rgb(248,248,248)]   ${feature.style} `} key={feature.title}> 
    <div className={`self-center min-[800px]:max-w-[18rem] min-[800px]:mx-8 lg:max-w-[23rem]  px-4 pt-8 ${feature.textStyle} `} >
     <h3 className='font-sans 
  text-2xl 2xl:text-3xl min-md:mb-7 min-[800px]:pt-8 font-[500]'>{feature.title}</h3>
