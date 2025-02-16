@@ -9,6 +9,5 @@ setFormState:(e?:Event)=>void
 const useStore = create(combine({isFormClicked:false},(set) => ({
  
  setFromState: () => set((state) => ({isFormClicked:!state.isFormClicked  })),
-
 })))
 export default useStore

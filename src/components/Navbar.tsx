@@ -18,7 +18,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
       return (<>
       <Register/>
     
-        <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl overflow-x-hidden  z-10  ${isMenuVisible?"  max-[800px]:h-[100vh]  max-[800px]:w-[100vw]  max-[800px]:absolute  max-[800px]:bg-[rgba(248,248,248,0.60)] ":"sticky"}`} ref={ref}>
+        <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl  overflow-hidden  z-10  ${isMenuVisible?"  max-[800px]:h-[110vh] max-[800px]:w-[100vw]  max-[800px]:fixed  max-[800px]:bg-[rgba(248,248,248,0.60)] top-0 ":"sticky"}`} ref={ref}>
             <nav className='flex justify-between h-14 2xl:h-16 lg:mx-14 min-[1350px]:mx-28  '>
                 <Link href="/" className='flex p-3  '>
                <div className='flex relative  overflow-hidden w-12'>
@@ -29,9 +29,9 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
     
        <div id='hamburger' className="flex-col mt-3 gap-1 trasnition-all ease-in-out duration-300 delay-300 max-[800px]:mr-7 p-2 hidden max-[800px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
        
-        <div className={`${layerStyle} ${isMenuVisible?"rotate-[45deg]  ":""}`}></div>
-        <div className={`${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>
-        <div className={`${layerStyle}  bg-black ${isMenuVisible?"-rotate-[45deg] -translate-y-[12px]":""}`}></div>
+        <div className={` transition-all duration-200 ease-in-out ${layerStyle} ${isMenuVisible?"rotate-[45deg]  ":""}`}></div>
+        <div className={` transition-all duration-200 ease-in-out ${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>
+        <div className={` transition-all duration-200 ease-in-out ${layerStyle}  bg-black ${isMenuVisible?"-rotate-[45deg] -translate-y-[12px]":""}`}></div>
     
        </div>
           <div className={`max-[800px]:mobileNav w-[60%] min-[800px]:flex min-[800px]:justify-between  ${isMenuVisible?"right-0":"-right-[100%]"}`}> 

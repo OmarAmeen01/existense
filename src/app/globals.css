@@ -21,7 +21,7 @@
 
 @layer components {
   .mobileNav{
-  @apply  absolute w-full h-[100vh]  z-30  top-[4rem] p-5 
+  @apply  absolute w-full h-[100vh]  z-30  top-[3.5rem] p-5 
   }
 }
 
