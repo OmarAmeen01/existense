@@ -29,9 +29,9 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
     
        <div id='hamburger' className="flex-col mt-3 gap-1 trasnition-all ease-in-out duration-300 delay-300 max-[800px]:mr-7 p-2 hidden max-[800px]:flex" onClick={()=>setMenuVisibility(prev=>!prev)}>
        
-        <div className={` transition-all duration-200 ease-in-out ${layerStyle} ${isMenuVisible?"rotate-[45deg]  ":""}`}></div>
-        <div className={` transition-all duration-200 ease-in-out ${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>
-        <div className={` transition-all duration-200 ease-in-out ${layerStyle}  bg-black ${isMenuVisible?"-rotate-[45deg] -translate-y-[12px]":""}`}></div>
+        <div className={` transition-all duration-500 ease-in-out ${layerStyle} ${isMenuVisible?"rotate-[45deg]  ":""}`}></div>
+        <div className={` transition-all duration-500 ease-in-out ${layerStyle} bg-black ${isMenuVisible?"-translate-x-4 opacity-0":""}`}></div>
+        <div className={` transition-all duration-500 ease-in-out ${layerStyle}  bg-black ${isMenuVisible?"-rotate-[45deg] -translate-y-[12px]":""}`}></div>
     
        </div>
           <div className={`max-[800px]:mobileNav w-[60%] min-[800px]:flex min-[800px]:justify-between  ${isMenuVisible?"top-9":"-top-[100%]"}`}> 
