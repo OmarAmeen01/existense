@@ -18,7 +18,7 @@ const Navbar = React.forwardRef<HTMLElement,NavbarProps>(({navLinks},ref)=>{
       return (<>
       <Register/>
     
-        <header className={` -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl  overflow-hidden  z-10  ${isMenuVisible?"  max-[800px]:h-[110vh] max-[800px]:w-[100vw]  max-[800px]:fixed  max-[800px]:bg-[rgba(248,248,248,0.60)] -top-1 ":"sticky"}`} ref={ref}>
+        <header className={`sticky -top-1 left-0 bg-[rgba(248,248,248,0.20)] backdrop-blur-2xl  overflow-hidden  z-10  ${isMenuVisible?"  max-[800px]:h-[110vh] max-[800px]:w-[100vw]  max-[800px]:fixed  max-[800px]:bg-[rgba(248,248,248,0.60)] -top-1 ":"sticky"}`} ref={ref}>
             <nav className='flex justify-between h-14 2xl:h-16 lg:mx-14 min-[1350px]:mx-28  '>
                 <Link href="/" className='flex p-3  '>
                <div className='flex relative  overflow-hidden w-12'>
