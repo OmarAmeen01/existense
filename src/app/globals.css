@@ -83,11 +83,11 @@ transform: translateX(-100%);
 }
 
 .itemLeft {
-  left: max(calc(200px * 4),100% );
+  left: max(calc(250px * 14),100% );
   animation-name: scrollLeft;
 }
 .itemRight {
-  right: max(calc(200px * 4), 100%  );
+  right: max(calc(250px * 14), 100%  );
   animation-name: scrollRight;
 }
 
@@ -97,172 +97,61 @@ transform: translateX(-100%);
 .itemRight {position: absolute;
 
   animation-timing-function:linear;
-  animation-duration: 36s;
+  animation-duration: 50s;
   animation-iteration-count: infinite;
 }
 
 
 .item0 {
-  animation-delay: calc(36s / 14 * (14- 1) * -1);
+  animation-delay: calc(50s / 14 * (14- 1) * -1);
 }
 
 .item1 {
-  animation-delay: calc(36s / 14 * (14 - 2) * -1);
+  animation-delay: calc(50s / 14 * (14 - 2) * -1);
 }
 
 .item2 {
-  animation-delay: calc(36s / 14 * (14 - 3) * -1);
+  animation-delay: calc(50s / 14 * (14 - 3) * -1);
 }
 
 .item3 {
-  animation-delay: calc(36s / 14 * (14 - 4) * -1);
+  animation-delay: calc(50s / 14 * (14 - 4) * -1);
 }
 
 .item4{
-  animation-delay: calc(36s / 14 * (14 - 5) * -1);
+  animation-delay: calc(50s / 14 * (14 - 5) * -1);
 }
 .item5{
-  animation-delay: calc(36s / 14 * (14 - 6) * -1);
+  animation-delay: calc(50s / 14 * (14 - 6) * -1);
 }
 .item6{
-  animation-delay: calc(36s / 14 * (14 - 7) * -1);
+  animation-delay: calc(50s / 14 * (14 - 7) * -1);
 }
 .item7{
-  animation-delay: calc(36s / 14 * (14 - 8) * -1);
+  animation-delay: calc(50s / 14 * (14 - 8) * -1);
 }
 .item8{
-  animation-delay: calc(36s / 14 * (14 - 9) * -1);
+  animation-delay: calc(50s / 14 * (14 - 9) * -1);
 }
 .item9{
-  animation-delay: calc(36s / 14 * (14 - 10) * -1);
+  animation-delay: calc(50s / 14 * (14 - 10) * -1);
 }
 .item10{
-  animation-delay: calc(36s / 14 * (14 - 11) * -1);
+  animation-delay: calc(50s / 14 * (14 - 11) * -1);
 }
 .item11{
-  animation-delay: calc(36s / 14 * (14 - 12) * -1);
+  animation-delay: calc(50s / 14 * (14 - 12) * -1);
 }
 .item12{
-  animation-delay: calc(36s / 14 * (14 - 13) * -1);
+  animation-delay: calc(50s / 14 * (14 - 13) * -1);
 }
 .item13{
-  animation-delay: calc(36s / 14 * (14 - 14) * -1);
+  animation-delay: calc(50s / 14 * (14 - 14) * -1);
 }
 
 
 
 
-@media screen and (min-width:1050px) {
-  @keyframes scrollLeft {
-    to {
-      left: -450px;
-    }
-  }
-  
-  @keyframes scrollRight {
-    to {
-      right: -450px;
-    }
-  }
- 
-  .itemLeft {
-    left: max(calc(50px * 4),calc(100% + 50px) );
-    animation-name: scrollLeft;
-  }
-  .itemRight {
-    right: max(calc(50px * 4), calc(100% + 50px) );
-    animation-name: scrollRight;
-  }
-}
-@media screen and (min-width:1120px) {
-  @keyframes scrollLeft {
-    to {
-      left: -400px;
-    }
-  }
-  
-  @keyframes scrollRight {
-    to {
-      right: -400px;
-    }
-  }
-  .itemLeft {
-    left: max(calc(50px * 4),calc(100% + 50px) );
-    animation-name: scrollLeft;
-  }
-  .itemRight {
-    right:max(calc(50px * 4),calc(100% + 50px) );
-    animation-name: scrollRight;
-  }
-}
-
-
-@media screen and (min-width:1250px) {
-  @keyframes scrollLeft {
-    to {
-      left: -500px;
-    }
-  }
-  
-  @keyframes scrollRight {
-    to {
-      right: -500px;
-    }
-  }
-  .itemLeft {
-    left: max(calc(40px * 4),calc(100% + 40px) );
-    animation-name: scrollLeft;
-  }
-  .itemRight {
-    right:max(calc(40px * 4),calc(100% + 40px) );
-    animation-name: scrollRight;
-  }
-}
-
-
-@media screen and (min-width:1400px) {
-  @keyframes scrollLeft {
-    to {
-      left: -400px;
-    }
-  }
-  
-  @keyframes scrollRight {
-    to {
-      right: -400px;
-    }
-  }
-  .itemLeft {
-    left: max(calc(0 * 4),calc(100% + 1px) );
-    animation-name: scrollLeft;
-  }
-  .itemRight {
-    right:max(calc(1px * 4),calc(100% + 1px) );
-    animation-name: scrollRight;
-  }
-}  
-
-@media screen and (min-width:1550px) {
-  @keyframes scrollLeft {
-    to {
-      left: -400px;
-    }
-  }
-  
-  @keyframes scrollRight {
-    to {
-      right: -400px;
-    }
-  }
-  .itemLeft {
-    left: max(calc(0* 4),calc(100% ) );
-    animation-name: scrollLeft;
-  }
-  .itemRight {
-    right:max(calc(0* 4),calc(100% ) );
-    animation-name: scrollRight;
-  }
-}
 
 /* global styles */
 

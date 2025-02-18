@@ -101,7 +101,7 @@ export default function page() {
   </div>
 <div>
 <Image className=" w-full  
-min-[800px]:max-w-[23rem]   rounded-lg  lg:min-w-[27.5rem] xl:min-w-[36.6rem]   min-[700px]:h-[450px]  xl:h-[532px] min-[1100px]:h-[434px] max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
+min-[800px]:max-w-[23.5rem]   rounded-lg  lg:min-w-[28rem] xl:min-w-[36.6rem]   min-[700px]:h-[450px]  xl:h-[532px] min-[1100px]:h-[434px] max-w-full" src={feature.image} alt={feature.title} width={34200} height={400} quality={100} style={{objectFit:"cover"}}/>
 </div>
    </div>
     )
@@ -114,10 +114,10 @@ min-[800px]:max-w-[23rem]   rounded-lg  lg:min-w-[27.5rem] xl:min-w-[36.6rem]   
         <h2 className='font-sans font-[500] text-3xl sm:text-4xl 2xl:text-5xl  text-center  '>Real Reviews</h2>
         <p className='text-center  min-[480px]:w-[28rem] font-sans  py-3 max-[400px]:px-4 text-lg  2xl:text-xl sm:w-[38rem] m-auto'>Tested by 1000+ students.</p>
     </header>
-   <section className='  overflow-hidden mt-10  mx-4 min-[1250px]:w-[1080px] min-[1400px]:w-[1224px] mr-auto ml-auto mb-28'>
+   <section className='  overflow-hidden mt-10  ml-8 min-[1250px]:w-[1150px] min-[1400px]:w-[1350px] 2xl:w-[1500px] min-1700:w-[1650px] min-[1250px]:mx-auto mb-28'>
   <div className="flex  wrapper">{reviews[0].map((review,index)=>{
     return (
-        <div className={` itemLeft  h-[77px]  w-[340px]  bg-[#F8F8F8]  rounded-lg item${index}`} key={review.slice(0,4)}>
+        <div className={` itemLeft  h-[77px]  w-[280px]   bg-[#F8F8F8]  rounded-lg item${index}`} key={review.slice(0,4)+index}>
         
           <p className='font-sans p-4 font-[500] text-sm'>{review}</p>
             
@@ -127,7 +127,7 @@ min-[800px]:max-w-[23rem]   rounded-lg  lg:min-w-[27.5rem] xl:min-w-[36.6rem]   
   <div className='flex  wrapper' >
   {reviews[1].map((review,index)=>{
     return (
-        <div className={` itemRight h-[77px]  w-[340px]   bg-[#F8F8F8] rounded-lg  item${index}`}  key={review.slice(0,4)}>
+        <div className={` itemRight h-[77px] w-[280px] bg-[#F8F8F8] rounded-lg item${index}`}  key={review.slice(0,4)+index}>
         
           <p className='font-sans p-4 font-[500] text-sm'>{review}</p>
             
@@ -138,7 +138,7 @@ min-[800px]:max-w-[23rem]   rounded-lg  lg:min-w-[27.5rem] xl:min-w-[36.6rem]   
   <div className='flex  wrapper'>
   {reviews[2].map((review,index)=>{
     return (
-        <div className={`  itemLeft h-[77px]  w-[340px] font-[500] bg-[#F8F8F8] rounded-lg item${index}`} key={review.slice(0,4)}>
+        <div className={` itemLeft h-[77px]  w-[280px]  font-[500] bg-[#F8F8F8] rounded-lg item${index}`} key={review.slice(0,4)+index}>
         
           <p className='font-sans p-4  text-sm'>{review}</p>
             
