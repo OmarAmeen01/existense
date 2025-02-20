@@ -18,7 +18,7 @@ function Home() {
       <h1 className='font-sans text-center text-4xl 2xl:text-5xl  py-1 lg:py-4 text-white font-[600]'>
            Existense
         </h1>
-        <p className='font-sans text-xl 2xl:text-2xl text-white text-center '>Revolutionising The Education System Forever</p>
+        <p className='font-sans text-xl 2xl:text-2xl text-white text-center '>Revolutionizing The Education System Forever</p>
       </div >
       <Link href="/company" className='border-none bg-white font-sans text-[17px] rounded-3xl  py-2 px-4 outline-none trasition-all duration-100  hover:opacity-95 lg:mt-3  '>Learn More</Link>
       </div>
