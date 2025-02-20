@@ -129,7 +129,7 @@ async function onSubmit(formData:FormInput) {
           >    </div>
       
             <form
-              className="bg-[#F8F8F8]  z-[15]  min-[676px]:mt-3 p-2 sm:p-8  rounded-lg  w-full  absolute shadow-sm
+              className="bg-[#F8F8F8]  z-[15]  min-[676px]:mt-3 p-2 md:p-4  rounded-lg  w-full  absolute shadow-sm
               top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]  min-[385px]:max-w-[385px] sm:max-w-[550px]  overflow-hidden min-[676px]:mx-2 
         
               max-[350px]:max-w-[290px] "
@@ -145,7 +145,7 @@ async function onSubmit(formData:FormInput) {
                 >
                   <Image
                     src="/cross.svg"
-                    className="sm:w-[42px] sm:h-[42px] "
+                    className=" "
                     alt="close"
                     title="close"
                     width={28}
@@ -153,10 +153,10 @@ async function onSubmit(formData:FormInput) {
                    
                   />
                 </button>
-                <h2 className='font-sans font-[500] text-3xl sm:text-4xl  text-center  py-4'>
+                <h2 className='font-sans font-[500] text-3xl text-center  '>
                   Register
                 </h2>
-                <p className="font-sans text-lg  min-[676px]:py-2 text-center text-gray-500  min-[676px]:px-16">
+                <p className="font-sans   min-[676px]:py-2 text-center text-gray-500  min-[676px]:px-16">
                   Join Misty&apos;s waitlist now for early access to the future of
                   learning!
                 </p>
@@ -196,9 +196,11 @@ async function onSubmit(formData:FormInput) {
                   type="email"
                   error={errors.email}
                   className="mb-5 "
-                  pattern= {/^\S+@\S+\.\S+$/}
-                  placeholder="Email"
                   register={register}
+              required="Email is required"
+                  pattern= {/^\S+@\S+\.\S+$/}
+                  placeholder="Email*"
+                  
                   fieldName="email"
                 />
                
@@ -250,24 +252,24 @@ async function onSubmit(formData:FormInput) {
           />
       {errors.grade&&<p className="absolute left-1 -top-[18px] text-[11px] text-red-500 font-sans  ">{errors.grade.message}</p>}
           </div>
-              <p className="font-sans text-sm sm:text-lg mt-4 text-gray-500 text-center">
+              <p className="font-sans max-sm:text-sm  text-gray-500 text-center">
                 By clicking “Submit”, you agree to our{" "}
                 <a
                   href="#"
-                  className="font-sans text-sm sm:text-lg hover:text-[#006dff] font-[600] text-black underline "
+                  className="font-sans max-sm:text-sm hover:text-[#006dff] font-[600] text-black underline "
                 >
                   Terms of service
                 </a>{" "}
                 and acknowledge of our{" "}
                 <a
                   href="#"
-                  className="font-sans text-sm sm:text-lg font-[600] hover:text-[#006dff] text-black underline "
+                  className="font-sans max-sm:text-sm  font-[600] hover:text-[#006dff] text-black underline "
                 >
                   Privacy policy.
                 </a>
               </p>
                <Button
-                className="relative left-[50%] -translate-x-[50%]  p-[6px] px-6 mt-8 mb-2"
+                className="relative left-[50%] -translate-x-[50%]  p-[6px] px-6 mt-4 mb-2"
                 text={isSubmitting? "wait..." : "submit"}
                 type="submit"
               />
