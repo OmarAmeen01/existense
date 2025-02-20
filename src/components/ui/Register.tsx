@@ -140,12 +140,12 @@ async function onSubmit(formData:FormInput) {
               )}
               <div className="relative mb-6">
                 <button
-                  className="bg-transparent p-2 absolute -top-6 -right-2 hover:bg-"
+                  className="bg-transparent p-2 absolute -top-3  -right-2 hover:bg-"
                   onClick={()=>{setFromState()}}
                 >
                   <Image
                     src="/cross.svg"
-                    className="max-sm:h-6"
+                  
                     alt="close"
                     title="close"
                     width={28}
