@@ -140,12 +140,12 @@ async function onSubmit(formData:FormInput) {
               )}
               <div className="relative mb-6">
                 <button
-                  className="bg-transparent p-2 absolute right-0 hover:bg-"
+                  className="bg-transparent p-2 absolute -top-6 -right-2 hover:bg-"
                   onClick={()=>{setFromState()}}
                 >
                   <Image
                     src="/cross.svg"
-                    className=" "
+                    className="max-sm:h-6"
                     alt="close"
                     title="close"
                     width={28}
@@ -153,10 +153,10 @@ async function onSubmit(formData:FormInput) {
                    
                   />
                 </button>
-                <h2 className='font-sans font-[500] text-3xl text-center  '>
+                <h2 className='font-sans font-[500] text-2xl md:text-3xl text-center '>
                   Register
                 </h2>
-                <p className="font-sans   min-[676px]:py-2 text-center text-gray-500  min-[676px]:px-16">
+                <p className="font-sans py-2 text-center max-md:text-sm text-gray-500  min-[676px]:px-16">
                   Join Misty&apos;s waitlist now for early access to the future of
                   learning!
                 </p>
@@ -252,24 +252,24 @@ async function onSubmit(formData:FormInput) {
           />
       {errors.grade&&<p className="absolute left-1 -top-[18px] text-[11px] text-red-500 font-sans  ">{errors.grade.message}</p>}
           </div>
-              <p className="font-sans max-sm:text-sm  text-gray-500 text-center">
+              <p className="font-sans max-md:text-sm  text-gray-500 text-center">
                 By clicking “Submit”, you agree to our{" "}
                 <a
                   href="#"
-                  className="font-sans max-sm:text-sm hover:text-[#006dff] font-[600] text-black underline "
+                  className="font-sans max-md:text-sm hover:text-[#006dff] font-[600] text-black underline "
                 >
                   Terms of service
                 </a>{" "}
                 and acknowledge of our{" "}
                 <a
                   href="#"
-                  className="font-sans max-sm:text-sm  font-[600] hover:text-[#006dff] text-black underline "
+                  className="font-sans max-md:text-sm  font-[600] hover:text-[#006dff] text-black underline "
                 >
                   Privacy policy.
                 </a>
               </p>
                <Button
-                className="relative left-[50%] -translate-x-[50%]  p-[6px] px-6 mt-4 mb-2"
+                className="relative left-[50%] -translate-x-[50%]  p-[6px] px-6 mt-4 mb-2 max-md:text-sm max-md:px-4 text-[17px]"
                 text={isSubmitting? "wait..." : "submit"}
                 type="submit"
               />
